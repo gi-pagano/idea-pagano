@@ -1,0 +1,101 @@
+//aside en index//
+.aside-sty {
+	background-color: $light-pink;
+	margin: 40px 0 40px 0;
+}
+
+//formulario//
+.contact-txt {
+	@include flex-column;
+	grid-area: contact-txt;
+	margin: 20px auto auto 80px;
+}
+
+form {
+	grid-area: formulario;
+	margin: 0 0 0 10px;
+	@include flex-column;
+	align-items: center;
+
+	label {
+		color: $light-ocean;
+		@include fuente('norm', '500', 'xs');
+		margin-top: size(1);
+		align-self: flex-start;
+		padding-left: size(10);	
+	} 
+
+	input {
+		@include form;
+	}
+
+	.radio-container {
+		width: size(1.5);
+		height: size(1.5);
+		margin-left: size(2); 
+	  }
+	  
+	.radio-container-si {
+		width: size(1.5);
+		height: size(1.5);
+		margin-left: size(2.8);
+	  }
+	  
+	select {
+		@include form;
+	  }  
+	  
+	textarea {
+		@include form;
+		height: 150px;
+		margin-top: 1rem;
+	  }
+	
+}
+//fin formulario//
+
+//flex de container ciudades//
+.grid-city-container {
+	grid-area: itinerario;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: start;
+	margin: -20px 5px 0 80px;
+}
+
+.container-galeria {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: size(3);
+  }
+
+//flex de container servicios//
+.subcontainer-servicios {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-ocean;
+	width: size(60);
+  }  
+
+//servicios//
+.flex-servicios {
+	@include flex-column;
+	align-content: center;
+	margin: 50px 0 0 70px;
+
+	.flex-hotel {
+	  @include flex-row;
+	}
+	.flex-itinerario {
+		display: flex;
+		flex-direction: row-reverse;
+		margin-right: 76px;
+	}
+  
+	.btn-svc {
+	  margin: 0 0 50px 500px;
+	  width:50%;
+	}                  
+  }  

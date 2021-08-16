@@ -1,0 +1,30 @@
+//Botones//
+.btn-1 {
+	@include boton;
+    @include fuente('norm', '800', 'xs');
+	&:hover {
+		background-color: $pinky;
+		
+	}
+}
+
+.btn-2 {
+	@include boton;
+    @include fuente('norm', '800', 'xs');
+	&:hover {
+		background-color: $pinky;
+		
+	}
+} 
+
+.btn-3 {
+	@include boton;
+    @include fuente('norm', '800', 'sm');
+	&:hover {
+		background-color: $light-ocean;
+	}
+	width: percentage(5);
+	height: size(7);
+	color: $dark-ocean;
+	margin: 80px auto 0 -50px;
+}

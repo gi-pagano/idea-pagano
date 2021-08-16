@@ -1,0 +1,41 @@
+* {
+	@include reset-pm
+}
+
+.row {
+	>* {
+		padding: 0;
+	}
+}
+
+html {
+	font-family: $font;
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $ocean-green;
+}
+
+::-webkit-scrollbar {
+	width: size(2);
+}
+
+::-webkit-scrollbar-track {
+	background: $dark-ocean;
+	border-radius: size(5);
+}
+
+::-webkit-scrollbar-thumb {
+	background: $pinky;
+	border-radius: size(5);
+}
+
+.breadcrumb-item.active {
+	color: $light-ocean;
+}
+
+.breadcrumb {
+	background-color: $dark-ocean;
+	border-bottom: solid 1px $light-ocean;
+}

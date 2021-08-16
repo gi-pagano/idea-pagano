@@ -1,0 +1,118 @@
+//functions//
+@function size($value){
+    @return $value * $unit;
+}
+
+@function percentage($value){
+    @return $value * $percentage-base;
+}
+
+//mixins//
+@mixin reset-pm{
+    margin: 0;
+	padding: 0;
+}
+
+@mixin flex-row{
+    display: flex;
+	flex-direction: row;
+}
+
+@mixin flex-column{
+    display: flex;
+	flex-direction: column;
+}
+
+@mixin grid-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: size(10);
+}
+
+@mixin grid-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: size(5);
+}
+
+@mixin form{
+    width: percentage(7);
+    padding: size(0.5);
+    border: 4px solid $light-pink;
+    border-radius: size(0.5);
+    @include fuente('norm', 'no', 'xxs');
+}
+
+@mixin boton{
+    margin-top: 2rem;
+    color: $light-ocean;
+    border: 4px solid $light-pink;
+    border-radius: size(2);
+    width: percentage(3);
+}
+
+@mixin servicios{
+    background-color: $pinky;
+    height: size(40);
+    width: size(60);
+}
+
+@mixin img-svc{
+    width: auto;
+    height: size(40);
+}
+
+//para fuentes//
+@mixin fuente($type, $bold, $size){
+    font-family: "Trirong", serif;
+    @if ($type == 'ita'){
+        font-style: italic;
+    }@else if ($type == 'norm'){
+        font-style: normal;
+    }
+    @if ($bold == '500'){
+        font-weight: 500;
+    }@else if ($bold == '700'){
+        font-weight: 700;
+    }@else if ($bold == 'no'){
+        font-weight: normal;
+    }
+    @if ($size == 'lg'){
+        font-size: 4rem;
+    }@else if ($size == 'md'){
+        font-size: 3rem;    
+    }@else if ($size == 'sm'){
+        font-size: 2rem;  
+    }@else if ($size == 'xs'){
+        font-size: 1.8rem;      
+    }@else if ($size == 'xxs'){
+        font-size: 1.6rem;
+    }
+}
+//fin mixins//
+
+
+//Bucles margenes en rem usados en "gracias.html"//
+@for $i from 1 through 2{
+    .margin-gracias-#{$i}{margin-top: 13rem * $i;}
+}
+
+@for $i from 1 through 4{
+    .padding-gracias-#{$i}{padding: 4rem * $i;}
+}
+
+//Map con each - Botones//
+$botones: (
+    1: $dark-ocean,
+    2: $ocean-green,
+    3: $pinky,
+);
+
+@each $boton, $color in $botones{
+    .btn-#{$boton}{
+        background-color: $color;
+    }
+}
+
+
+  

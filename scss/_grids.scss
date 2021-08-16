@@ -1,0 +1,83 @@
+//quienes somos//
+.grid-nosotros {
+    @include grid-column;
+    grid-template-rows: size(80);
+    grid-template-areas: "nosotros img-nosotros";                                                   
+  }
+
+//contactanos//  
+.grid-contacto {
+    @include grid-column;
+    grid-template-rows: size(100);
+    grid-template-areas: "contact-txt formulario";  
+  }  
+
+//londres y tokio// 
+.grid-city {
+    @include grid-column;
+    grid-template-rows: 100px 600px 1300px;
+    grid-template-areas: "title title"
+                         "itinerario video"
+                         "galeria galeria";
+    column-gap: 40px;  
+    .grid-city-title {
+      grid-area: title;
+      margin-top: size(-3);
+    }  
+    .grid-city-video {
+      grid-area: video;
+      margin-top: size(4);
+      
+    }
+    .grid-city-galeria {
+      grid-area: galeria;
+    }
+    
+}
+
+//recomendados//
+.grid-recommend {
+  @include grid-column;
+  grid-template-rows: 80px 600px;
+  grid-template-areas: "title title"
+                       "londres tokyo";
+  .grid-recommend-title {
+    grid-area: title;
+    margin-top: -30px;
+  }                                       
+}
+
+//error 404//
+.error-grid {
+  @include grid-column;
+  grid-template-areas: "error-title error-title"
+                       "error-img error-txt"; 
+  align-items: center; 
+  row-gap: size(5);
+  column-gap: 0;                   
+  .error-title {
+    grid-area: error-title;
+    margin-top: size(-5);
+    @include fuente ('norm', '700', 'lg');  
+  }  
+  .error-img {
+    grid-area: error-img;
+    margin: 0 -20px 20px 40px;
+  }              
+  .error-texto {
+    grid-area: error-txt;
+    @include flex-column;
+    background-color: $dark-ocean;
+    text-align: center;
+    margin: 0 40px 20px -20px;
+    padding: 160px 30px 160px 30px;
+  }  
+  .error-btn {
+    margin-left: size(3);
+  }   
+  
+}
+
+  
+
+  

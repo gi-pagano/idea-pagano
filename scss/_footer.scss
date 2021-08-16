@@ -1,0 +1,57 @@
+.container-foot { 
+	@include flex-column;
+
+    .container-foot_line {
+        height: size(4);
+        background-color: $pinky;
+    }
+
+    .container-foot_layout {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        height: size(7);
+        background-color: $light-pink;
+
+        .copyright-layout{
+            @include flex-row;
+            .logo-footer{
+                width: size(4);
+                margin: 8px 0 0 50px;
+            }
+
+            .copyright {
+                color: $dark-ocean;
+                @include fuente('norm', '700', 'xxs');
+                padding-left: size(2); 
+                margin-top: -5px;
+            }
+
+            .brand{
+                color: $dark-ocean;
+                @include fuente('norm', '500', 'xxs');
+                padding-left: size(1);
+                margin-top: -5px;
+            }
+        }
+
+        .slogan {
+            color: $dark-ocean;
+            @include fuente('ita', '700', 'xxs');
+            margin: -20px 0 0 -200px
+        }  
+
+        .icons-redes {
+            width: size(6); 
+            margin-right: size(3);  
+        }
+    }
+}
+
+
+
+  
+
+
+
+

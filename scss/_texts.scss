@@ -1,0 +1,139 @@
+//Hs y p//
+h1 {
+    text-align: center;
+    color: $light-ocean;
+    @include fuente('norm', 'no', 'md');
+    strong {
+        background: $dark-ocean;
+        margin-top: size(10);
+        margin-right: size(9);
+    }
+}
+
+.h1-style {
+    @include fuente('norm', '700', 'lg');
+    text-align: center;
+}
+
+.h1-display {
+    display: none;
+}
+
+h2 {
+    margin-left: size(2);
+    @include fuente('norm', 'no', 'md');
+    color: $light-ocean
+  }
+
+h3 {
+    margin-left: size(2);
+    @include fuente('norm', '500', 'sm');
+    color: $light-ocean
+}  
+
+h4 {
+    color: $light-ocean;
+    @include fuente('norm', '700', 'md');
+    background: rgb(155, 153, 153);
+    background: rgba(95, 93, 93, 0.7);
+    margin-bottom: size(6);
+    padding: size(1) - 2;
+}  
+
+p {
+    
+    @include fuente('norm', 'no', 'xs');
+    color: $light-ocean;
+    text-align: justify;
+    padding-top: size(2);  
+}
+
+//index//
+.container-summary {  
+    @include flex-column;
+	margin: 100px 0 100px 0;
+
+    .container-summary-line {
+        border-bottom: 1px solid $light-ocean;
+    }
+
+    .container-summary-text {
+        color: $light-ocean;
+        @include fuente('norm', 'no', 'xs');
+        text-align: justify;
+        padding: 70px 150px 0 40px;
+    }
+
+    .container-summary-img {
+        width: percentage(2);
+        align-self: center;
+        margin: 60px 70px 25px 0;
+    }
+}
+
+//aside en index//
+.covid-title {
+	text-align: center;
+	color: $dark-ocean;
+	font-size: 2.5rem;
+	padding-top: size(10);
+	margin-left: 2px;
+}
+.covid-text {
+	color: $dark-ocean;
+	font-size: 1.8rem;
+	text-align: center;
+	padding: 20px 20px 0 10px;
+}
+
+//alerta//
+.alert-warning {
+    color: $dark-ocean;
+    background-color: $light-ocean;
+    border-color: $light-pink;
+    @include fuente('norm', 'no', 'sm');
+    text-align: center;
+    margin-bottom: size(5);
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+//contacto//
+.h1-align {
+    text-align: start; 
+}
+
+//quienes somos//
+
+.nosotros-div { 
+    grid-area: nosotros;
+    @include flex-column;
+    justify-content: center;
+    width: 100%;
+    background-color: $dark-ocean;
+    margin: 60px auto auto 80px;
+    position: relative;
+    padding: size(5);
+}
+
+//londres y tokio//
+a {
+    color: $pinky;
+    &:hover {
+        color: $dark-ocean; 
+    }
+  }
+
+//servicios//
+.h2-servicios {
+    margin-left: size(-2.5);
+  } 
+  
+.svc-title {
+    margin: 80px 0 80px 0;
+}
+
+.svc-padding {
+    margin: 0 40px 0 40px;
+}

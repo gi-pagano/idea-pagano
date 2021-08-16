@@ -1,0 +1,65 @@
+.nav-color {
+	background-image: linear-gradient(to bottom, $pinky, $ocean-green, $dark-ocean);
+	border-bottom: solid 1px $light-ocean;
+}
+
+.logo{
+	width: percentage(2);
+	margin-left: size(2.5);
+	  }
+
+.navbar-light {
+	.navbar-nav {
+		.nav-link {
+			color: $light-ocean;
+			&:hover {
+				color: $light-ocean;
+		    }
+		}	
+	}
+}
+
+li {
+	border-right: 1.5px solid $light-ocean;
+	@include fuente('norm', '700', 'xxs');
+	padding: 0 25px 0 25px;
+		&:last-child {
+		border: none;
+		}
+	    a {
+		&:hover {
+			border-bottom: solid 4px $light-ocean;
+		}
+	}
+}
+
+ul {
+	ul {
+		li {
+		border-bottom: 1px solid $ocean-green;
+		background-color: $light-ocean;
+		width: size(20);
+		text-align: center;
+		}
+	}
+}
+
+.navbar-light .navbar-toggler {
+    border-color: $light-ocean;
+}
+
+.navbar-nav .dropdown-menu {
+	background-color: transparent;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+	@include fuente('norm', 'no', 'xxs');
+}	
+	
+.item-hover {
+	&:hover {
+		border-bottom: none;
+		color: $light-pink;
+	}
+}
+

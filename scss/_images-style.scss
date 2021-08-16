@@ -1,0 +1,83 @@
+//quienes somos//
+.nosotros-img {
+    grid-area: img-nosotros;
+    width: percentage(9);
+    padding-right: size(2);
+    height: size(60);
+  }
+
+//contacto//
+.contacto-img {
+    width: percentage(5);
+    padding-top: size(22);
+    align-self: center;
+}  
+
+/*css galeria*/
+.container-galeria-div {
+  @include flex-column;
+  border: 0.5rem groove $light-pink;
+  margin-bottom: size(2);
+  &:hover {
+    border: 0.3rem solid $pinky;
+    transform: scale(1.1);
+  }
+  .container-galeria-img {
+    width: size(40);
+    height: size(20);
+  }
+  .container-galeria-desc {
+    padding: size(1.5);
+    text-align: center;
+    @include fuente('norm', 'no', 'xs');
+    color: $light-ocean;
+  }
+}
+//fin galería//
+
+//recomendados//
+.london-img {
+  grid-area: londres;
+  @include flex-column;
+  margin-left: size(2);
+  animation-name: bounceInLeft;
+  animation-duration: 1s;
+  &:hover {
+    border: solid 8px $light-ocean;
+  }
+}
+
+.tokyo-img {
+  grid-area: tokyo;
+  @include flex-column;
+  animation-name: bounceInLeft;
+  animation-duration: 2s;
+  &:hover {
+    border: solid 8px $light-ocean;
+  }
+}
+
+.recommend-img {
+  width: size(65);
+  height: size(50);
+  border: groove 4px $light-pink; 
+}
+
+//servicios//
+.img-svc-style {
+  @include servicios;
+  .img-svc {
+      @include img-svc;
+      padding-left: size(11);
+       
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,406 @@
+//576 mobile, 768 tablets, desde 990 laptops//
+
+
+@media only screen and (max-width: 576px) {
+//navbar//
+    nav li {
+      border-right: none;
+      padding: 0; 
+    } 
+
+//footer// 
+
+    .container-foot .container-foot_layout {
+      height: size(15);
+      @include flex-column;
+    }
+
+    .container-foot .container-foot_layout .copyright-layout {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .container-foot .container-foot_layout .copyright-layout .logo-footer {
+      margin-left: 0;
+      width: size(3);
+    }
+
+    .container-foot .container-foot_layout .slogan {
+      margin-left: 0;
+    }
+
+    .container-foot .container-foot_layout .icons-redes {
+      margin: 0 0 5px 5px;
+      width: size(3);
+    }
+
+//index// 
+    .carousel-item {
+      height: size(20);
+    } 
+
+    h4 {
+      @include fuente('norm', '700', 'xs');
+      margin-bottom: size(5);
+    }  
+   
+    .carousel-item .carousel-item-texto {
+      display: none;
+    }
+
+    h1 strong {
+      background: none;
+      margin-right: 0;
+    }
+  
+    .container-summary .container-summary-line {
+      border-bottom: none;
+    }
+
+    .container-summary .container-summary-text {
+      padding: 70px 40px 0 40px;
+    }
+
+    .container-summary .container-summary-img {
+      margin: 60px 0 25px 0;
+    }
+
+    .covid-title {
+      padding: 10px 20px 0 20px;
+    }
+
+    .covid-text {
+      padding: 20px 40px 0 30px
+    }
+
+//nosotros//
+    .grid-nosotros {
+      @include grid-row;
+      grid-template-rows: 600px 400px;
+      grid-template-areas:  "nosotros"
+                            "img-nosotros";
+      justify-content: center;                                                   
+    }  
+
+    .h1-style {
+      @include fuente('norm', '700', 'sm');
+    } 
+    
+    p {
+      @include fuente('norm', 'no', 'xxs');
+    }
+
+    .nosotros-div {
+      margin: 10px 20px 0 20px;
+      width: auto;
+      padding: size(2);
+    }
+
+    .nosotros-img {
+      width: $total-width;
+      padding:0;
+      height: 350px;
+    }
+
+//recomendados//
+    .grid-recommend {
+      @include grid-row;
+      grid-template-rows: 80px 400px 400px;
+      grid-template-areas: "title"
+                          "londres" 
+                          "tokyo"; 
+      .grid-recommend-title {
+        margin-top: 0;
+      }                      
+    }
+
+    .recommend-img {
+      width: $total-width;
+      height: auto;
+    }
+    
+    .london-img {
+      margin-left: size(0);
+    }
+}                       
+
+@media only screen and (min-width: 577px) and (max-width: 990px) {
+//navbar//
+    nav li {
+      border-right: none;
+      padding: 0; 
+    } 
+    
+//footer// 
+    .container-foot .container-foot_layout {
+      height: size(13);
+      @include flex-column;
+      justify-content: center;
+    }   
+      
+    .container-foot .container-foot_layout .copyright-layout .logo-footer {
+      margin-left: 0;
+    }
+
+    .container-foot .container-foot_layout .slogan {
+      margin-left: 0;
+    }
+
+    .container-foot .container-foot_layout .icons-redes {
+      margin: 10px 0 5px 0;
+    }
+
+//index//
+    .carousel-item {
+      height: size(40);
+    } 
+
+    h4 {
+      @include fuente('norm', '700', 'sm');
+      margin-bottom: size(5);
+    }  
+
+    .carousel-item .carousel-item-texto {
+      display: none;
+    }
+
+    h1 strong {
+      margin-left: size(7);
+    }
+
+    .container-summary .container-summary-text {
+      padding: 70px 40px 0 40px;
+    }
+
+    .container-summary .container-summary-img {
+      margin: 60px 0 25px 0;
+    }
+
+    .covid-title {
+      padding-top: 10px;
+    }
+    
+
+//nosotros//
+    .grid-nosotros {
+      @include grid-row;
+      grid-template-rows: 500px 600px;
+      grid-template-areas:  "nosotros"
+                            "img-nosotros";
+      justify-content: center;                                                   
+    }
+    
+    .nosotros-div {
+      margin: 10px 20px 0 20px;
+      width: auto;
+      padding: size(2);
+    }
+
+    .nosotros-img {
+      width: 80%;
+      margin-left: size(6);
+      justify-self: center;
+      height: 550px;
+    }
+
+//recomendados//
+    .grid-recommend {
+      @include grid-row;
+      grid-template-rows: 80px 700px 700px;
+      grid-template-areas: "title"
+                          "londres" 
+                          "tokyo"; 
+      .grid-recommend-title {
+        margin-top: 0;
+      }                      
+    }
+    .recommend-img {
+      width: $total-width;
+      height: 500px;
+    } 
+    .london-img {
+      margin-left: size(0);
+    } 
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1300px) {
+  .grid-recommend {
+    @include grid-row;
+    grid-template-rows: 80px 700px 700px;
+    grid-template-areas: "title"
+                        "londres" 
+                        "tokyo"; 
+    .grid-recommend-title {
+      margin-top: 0;
+    }                      
+  }
+  .recommend-img {
+    width: $total-width;
+    height: 500px;
+  } 
+  .london-img {
+    margin-left: size(0);
+  }
+} 
+ 
+//formulario contacto//
+@media only screen and (max-width: 800px) {
+  .grid-contacto {
+    @include grid-row;
+    grid-template-rows: 500px 900px;
+    grid-template-areas: "contact-txt" 
+                         "formulario";  
+  } 
+
+  .contact-txt {
+    margin-right: size(2);
+  } 
+
+  .contacto-img {
+    width: 30%;
+    padding-top: size(5);
+  }
+}  
+
+//Londres y Tokyo//
+@media only screen and (min-width: 836px) and (max-width: 1330px) {
+  .grid-city {
+    @include grid-row;
+    grid-template-rows: 100px 600px 400px 1800px;
+    grid-template-areas: "title"
+                         "itinerario" 
+                         "video"
+                         "galeria";
+
+  }
+
+  .grid-city-container {
+    margin-right: size(4);
+  }
+
+  .grid-city .grid-city-video {
+    justify-self: center;
+  }
+}  
+
+@media only screen and (min-width: 423px) and (max-width: 835px) {
+  .grid-city {
+    @include grid-row;
+    grid-template-rows: 100px 700px 400px 3200px;
+    grid-template-areas: "title"
+                         "itinerario" 
+                         "video"
+                         "galeria";
+
+  }
+
+  .grid-city-container {
+    margin-right: size(6);
+  }
+
+  .grid-city .grid-city-video {
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  .grid-city {
+    @include grid-row;
+    grid-template-rows: 100px 900px 500px 3200px;
+    grid-template-areas: "title"
+                         "itinerario" 
+                         "video"
+                         "galeria";
+
+  }
+
+  .grid-city-container {
+    margin-right: size(6);
+  }
+
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: size(40);
+  }
+}
+
+//servicios//
+@media only screen and (min-width: 908px) and (max-width: 1330px) {
+
+.flex-servicios .flex-hotel {
+  @include flex-column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex-servicios .flex-itinerario {
+  @include flex-column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 0;
+} 
+
+.btn-3 {
+  @include fuente('norm', 'no', 'xs');
+  width: 100%;
+}
+
+.flex-servicios .btn-svc {
+  align-self: center;
+  width:80%;
+  margin-left: 50px;
+}  
+} 
+
+@media only screen and (max-width: 908px) {
+  .flex-servicios {
+   margin: 0;
+   .flex-servicios .flex-hotel {
+    @include flex-column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .flex-servicios .flex-itinerario {
+    @include flex-column;
+    flex-wrap: wrap;
+    align-items: center;
+  }  
+  } 
+  .flex-servicios .btn-svc {
+    margin-left: 80px;
+    width: 80%;
+  }  
+
+  .btn-3 {
+    @include fuente('norm', 'no', 'xxs');
+    width: 100%;
+  }
+
+  .flex-servicios .flex-hotel {
+    @include flex-column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .subcontainer-servicios {
+    width: 330px;
+    margin: 0 10px 100px 10px;
+
+  }
+  .img-svc-style {
+    display: none;
+    }
+
+  }
+  
+ 
+@media only screen and (max-width: 850px) {  
+ //404 error page//
+.error-grid {
+  @include grid-column;
+  grid-template-areas: "error-title"
+                       "error-img" 
+                       "error-txt";
+  .error-texto {  
+    margin-left: size(4);                      
+  }   
+}
+}
