@@ -8,6 +8,10 @@
       padding: 0; 
     } 
 
+    .logo{
+      width: 30vw;
+    }
+
 //footer// 
 
     .container-foot .container-foot_layout {
@@ -35,15 +39,6 @@
     }
 
 //index// 
-    .carousel-item {
-      height: size(20);
-    } 
-
-    h4 {
-      @include fuente('norm', '700', 'xs');
-      margin-bottom: size(5);
-    }  
-   
     .carousel-item .carousel-item-texto {
       display: none;
     }
@@ -130,6 +125,10 @@
       border-right: none;
       padding: 0; 
     } 
+
+    .logo{
+      width: 20vw;
+    }
     
 //footer// 
     .container-foot .container-foot_layout {
@@ -150,16 +149,7 @@
       margin: 10px 0 5px 0;
     }
 
-//index//
-    .carousel-item {
-      height: size(40);
-    } 
-
-    h4 {
-      @include fuente('norm', '700', 'sm');
-      margin-bottom: size(5);
-    }  
-
+//index// 
     .carousel-item .carousel-item-texto {
       display: none;
     }
@@ -245,6 +235,7 @@
  
 //formulario contacto//
 @media only screen and (max-width: 800px) {
+
   .grid-contacto {
     @include grid-row;
     grid-template-rows: 500px 900px;
@@ -283,7 +274,7 @@
   }
 }  
 
-@media only screen and (min-width: 423px) and (max-width: 835px) {
+@media only screen and (min-width: 560px) and (max-width: 835px) {
   .grid-city {
     @include grid-row;
     grid-template-rows: 100px 700px 400px 3200px;
@@ -295,18 +286,20 @@
   }
 
   .grid-city-container {
-    margin-right: size(6);
-  }
+    margin-right: 20px;
+    margin-left: 20px;
+  }  
 
   .grid-city .grid-city-video {
     justify-self: center;
   }
 }
 
-@media only screen and (max-width: 422px) {
+@media only screen and (min-width: 409px) and (max-width: 559px) {
+  
   .grid-city {
     @include grid-row;
-    grid-template-rows: 100px 900px 500px 3200px;
+    grid-template-rows: 100px 700px 500px 3200px;
     grid-template-areas: "title"
                          "itinerario" 
                          "video"
@@ -315,13 +308,48 @@
   }
 
   .grid-city-container {
-    margin-right: size(6);
-  }
+    margin-right: 20px;
+    margin-left: 20px;
+  }  
 
   .grid-city .grid-city-video {
     justify-self: center;
-    width: size(40);
+    width: size(35);
+    height: 200px;
   }
+
+  .container-galeria-img {
+    width: size(28);
+  }  
+}
+
+@media only screen and (max-width: 408px) {
+
+  .grid-city {
+    @include grid-row;
+    grid-template-rows: 100px 1150px 350px 3200px;
+    grid-template-areas: "title"
+                         "itinerario" 
+                         "video"
+                         "galeria";
+
+  }
+
+  .grid-city-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }  
+
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: size(25);
+    height: size(15);
+  }
+
+  .container-galeria-img {
+    width: size(15);
+    height: size(15);
+  }  
 }
 
 //servicios//
@@ -403,4 +431,78 @@
     margin-left: size(4);                      
   }   
 }
+}
+
+//menu hamburguesa//
+@media only screen and (max-width: 991px) {
+  .navbar-light .navbar-nav .nav-link {
+    text-align: right;
+  }
+
+  li .active-page {
+    border-bottom: none;
+		transform: none;
+	}
+}  
+
+//carrusel texto//
+@media only screen and (max-width: 309px) {
+  h4 {
+    @include fuente('norm', '700', 'sm');
+    margin: 0 0 70px 70px;
+  }  
+}  
+
+@media only screen and (min-width: 310px) and (max-width: 403px) {
+  h4 {
+    @include fuente('norm', '700', 'sm');
+    margin: 0 0 90px 80px;
+  } 
+}
+
+@media only screen and (min-width: 404px) and (max-width: 515px) {
+  h4 {
+    @include fuente('norm', '700', 'md');
+    margin: 0 0 129px 90px;
+  }  
+}
+
+@media only screen and (min-width: 516px) and (max-width: 653px) {
+  h4 {
+    @include fuente('norm', '700', 'md');
+    margin: 0 0 170px 90px;  
+  } 
+}  
+
+@media only screen and (min-width: 654px) and (max-width: 857px) {
+  h4 {
+    @include fuente('norm', '700', 'md');
+    margin: 0 0 245px 150px;  
+  } 
+}
+
+@media only screen and (min-width: 858px) and (max-width: 995px) {
+  h4 {
+    @include fuente('norm', '700', 'md');
+    margin: 0 0 320px 150px;  
+  } 
+
+  .carousel-item .carousel-item-texto {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 996px) and (max-width: 1239px) {
+  .logo{
+    width: 15vw;
+  }
+
+  h4 {
+    @include fuente('norm', '700', 'lg');
+    margin: 0 0 380px 210px;  
+  } 
+
+  .carousel-item .carousel-item-texto {
+    display: none;
+  }
 }

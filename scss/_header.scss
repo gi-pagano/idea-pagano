@@ -1,11 +1,15 @@
 .nav-color {
-	background-image: linear-gradient(to bottom, $pinky, $ocean-green, $dark-ocean);
+	background-image: linear-gradient(to bottom, $ocean-green, $dark-ocean);
 	border-bottom: solid 1px $light-ocean;
 }
 
+.navbar-brand {
+	width: percentage(5);
+}
+
 .logo{
-	width: percentage(2);
-	margin-left: size(2.5);
+	width: 11vw;
+	margin-left: percentage(0.4);
 	  }
 
 .navbar-light {
@@ -31,6 +35,11 @@ li {
 			border-bottom: solid 4px $light-ocean;
 		}
 	}
+	.active-page {
+		border-bottom: 1.4px solid $light-pink;
+		transform: scale(1.1);
+		font-style: italic;
+	}
 }
 
 ul {
@@ -52,14 +61,5 @@ ul {
 	background-color: transparent;
 }
 
-.breadcrumb-item+.breadcrumb-item {
-	@include fuente('norm', 'no', 'xxs');
-}	
-	
-.item-hover {
-	&:hover {
-		border-bottom: none;
-		color: $light-pink;
-	}
-}
+
 

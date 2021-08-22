@@ -1,15 +1,10 @@
-.carousel-item {
-	height: size(65);
-	float: none;
-
-	.carousel-item-texto {
-		color: $dark-ocean;
+.carousel-item-texto {
+		color: $light-ocean;
 		@include fuente('norm', 'no', 'sm');
 		text-align: center;
 		margin: 0 100px 450px 100px;
 		padding-top: 0;
 	}
-}
 
 .carousel-control-next-icon {
 	width: size(6);

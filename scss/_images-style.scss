@@ -16,22 +16,29 @@
 /*css galeria*/
 .container-galeria-div {
   @include flex-column;
-  border: 0.5rem groove $light-pink;
   margin-bottom: size(2);
   &:hover {
-    border: 0.3rem solid $pinky;
     transform: scale(1.1);
   }
-  .container-galeria-img {
-    width: size(40);
-    height: size(20);
+
+.container-galeria-img {
+  width: size(40);
+  height: size(20);
+  border-radius: size(1);
   }
-  .container-galeria-desc {
-    padding: size(1.5);
-    text-align: center;
-    @include fuente('norm', 'no', 'xs');
-    color: $light-ocean;
+
+.container-galeria-desc {
+  padding: size(1.5);
+  text-align: center;
+  @include fuente('norm', 'no', 'xs');
+  color: $light-ocean;
   }
+
+.img-divider {
+  width: percentage(10);
+  height: percentage(7);
+  border-radius: size(1);
+}  
 }
 //fin galería//
 

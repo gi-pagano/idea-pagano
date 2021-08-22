@@ -40,7 +40,7 @@ body {
   background-color: #006D7B; }
 
 ::-webkit-scrollbar {
-  width: 20px; }
+  width: 10px; }
 
 ::-webkit-scrollbar-track {
   background: #324b50;
@@ -58,12 +58,15 @@ body {
   border-bottom: solid 1px #d1e8e2; }
 
 .nav-color {
-  background-image: linear-gradient(to bottom, #d9b08c, #006D7B, #324b50);
+  background-image: linear-gradient(to bottom, #006D7B, #324b50);
   border-bottom: solid 1px #d1e8e2; }
 
+.navbar-brand {
+  width: 50%; }
+
 .logo {
-  width: 20%;
-  margin-left: 25px; }
+  width: 11vw;
+  margin-left: 4%; }
 
 .navbar-light .navbar-nav .nav-link {
   color: #d1e8e2; }
@@ -81,6 +84,10 @@ li {
     border: none; }
   li a:hover {
     border-bottom: solid 4px #d1e8e2; }
+  li .active-page {
+    border-bottom: 1.4px solid #ffcb9a;
+    transform: scale(1.1);
+    font-style: italic; }
 
 ul ul li {
   border-bottom: 1px solid #006D7B;
@@ -94,28 +101,15 @@ ul ul li {
 .navbar-nav .dropdown-menu {
   background-color: transparent; }
 
-.breadcrumb-item + .breadcrumb-item {
+.carousel-item-texto {
+  color: #d1e8e2;
   font-family: "Trirong", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.6rem; }
-
-.item-hover:hover {
-  border-bottom: none;
-  color: #ffcb9a; }
-
-.carousel-item {
-  height: 650px;
-  float: none; }
-  .carousel-item .carousel-item-texto {
-    color: #324b50;
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0 100px 450px 100px;
-    padding-top: 0; }
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 100px 450px 100px;
+  padding-top: 0; }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 60px;
@@ -164,11 +158,10 @@ h4 {
   font-family: "Trirong", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 3rem;
-  background: #9b9999;
-  background: rgba(95, 93, 93, 0.7);
-  margin-bottom: 60px;
-  padding: 8px; }
+  font-size: 6rem;
+  padding: 8px;
+  width: 45%;
+  margin-left: 260px; }
 
 p {
   font-family: "Trirong", serif;
@@ -416,15 +409,17 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
-  grid-template-rows: 100px 600px 1300px;
+  grid-template-rows: 130px 600px 1330px;
   grid-template-areas: "title title" "itinerario video" "galeria galeria";
   column-gap: 40px; }
   .grid-city .grid-city-title {
     grid-area: title;
-    margin-top: -30px; }
+    margin-top: -10px; }
   .grid-city .grid-city-video {
     grid-area: video;
-    margin-top: 40px; }
+    margin-top: 40px;
+    width: 560px;
+    height: 315px; }
   .grid-city .grid-city-galeria {
     grid-area: galeria; }
 
@@ -482,14 +477,13 @@ form {
 .container-galeria-div {
   display: flex;
   flex-direction: column;
-  border: 0.5rem groove #ffcb9a;
   margin-bottom: 20px; }
   .container-galeria-div:hover {
-    border: 0.3rem solid #d9b08c;
     transform: scale(1.1); }
   .container-galeria-div .container-galeria-img {
     width: 400px;
-    height: 200px; }
+    height: 200px;
+    border-radius: 10px; }
   .container-galeria-div .container-galeria-desc {
     padding: 15px;
     text-align: center;
@@ -498,6 +492,10 @@ form {
     font-weight: normal;
     font-size: 1.8rem;
     color: #d1e8e2; }
+  .container-galeria-div .img-divider {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px; }
 
 .london-img {
   grid-area: londres;
@@ -599,6 +597,8 @@ form {
   nav li {
     border-right: none;
     padding: 0; }
+  .logo {
+    width: 30vw; }
   .container-foot .container-foot_layout {
     height: 150px;
     display: flex;
@@ -614,14 +614,6 @@ form {
   .container-foot .container-foot_layout .icons-redes {
     margin: 0 0 5px 5px;
     width: 30px; }
-  .carousel-item {
-    height: 200px; }
-  h4 {
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.8rem;
-    margin-bottom: 50px; }
   .carousel-item .carousel-item-texto {
     display: none; }
   h1 strong {
@@ -680,6 +672,8 @@ form {
   nav li {
     border-right: none;
     padding: 0; }
+  .logo {
+    width: 20vw; }
   .container-foot .container-foot_layout {
     height: 130px;
     display: flex;
@@ -691,14 +685,6 @@ form {
     margin-left: 0; }
   .container-foot .container-foot_layout .icons-redes {
     margin: 10px 0 5px 0; }
-  .carousel-item {
-    height: 400px; }
-  h4 {
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 50px; }
   .carousel-item .carousel-item-texto {
     display: none; }
   h1 strong {
@@ -779,7 +765,7 @@ form {
   .grid-city .grid-city-video {
     justify-self: center; } }
 
-@media only screen and (min-width: 423px) and (max-width: 835px) {
+@media only screen and (min-width: 560px) and (max-width: 835px) {
   .grid-city {
     display: grid;
     grid-template-columns: 1fr;
@@ -787,22 +773,45 @@ form {
     grid-template-rows: 100px 700px 400px 3200px;
     grid-template-areas: "title" "itinerario"  "video" "galeria"; }
   .grid-city-container {
-    margin-right: 60px; }
+    margin-right: 20px;
+    margin-left: 20px; }
   .grid-city .grid-city-video {
     justify-self: center; } }
 
-@media only screen and (max-width: 422px) {
+@media only screen and (min-width: 409px) and (max-width: 559px) {
   .grid-city {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 50px;
-    grid-template-rows: 100px 900px 500px 3200px;
+    grid-template-rows: 100px 700px 500px 3200px;
     grid-template-areas: "title" "itinerario"  "video" "galeria"; }
   .grid-city-container {
-    margin-right: 60px; }
+    margin-right: 20px;
+    margin-left: 20px; }
   .grid-city .grid-city-video {
     justify-self: center;
-    width: 400px; } }
+    width: 350px;
+    height: 200px; }
+  .container-galeria-img {
+    width: 280px; } }
+
+@media only screen and (max-width: 408px) {
+  .grid-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 1150px 350px 3200px;
+    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
+  .grid-city-container {
+    margin-right: 20px;
+    margin-left: 20px; }
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: 250px;
+    height: 150px; }
+  .container-galeria-img {
+    width: 150px;
+    height: 150px; } }
 
 @media only screen and (min-width: 908px) and (max-width: 1330px) {
   .flex-servicios .flex-hotel {
@@ -868,3 +877,72 @@ form {
     grid-template-areas: "error-title" "error-img"  "error-txt"; }
     .error-grid .error-texto {
       margin-left: 40px; } }
+
+@media only screen and (max-width: 991px) {
+  .navbar-light .navbar-nav .nav-link {
+    text-align: right; }
+  li .active-page {
+    border-bottom: none;
+    transform: none; } }
+
+@media only screen and (max-width: 309px) {
+  h4 {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 70px 70px; } }
+
+@media only screen and (min-width: 310px) and (max-width: 403px) {
+  h4 {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 90px 80px; } }
+
+@media only screen and (min-width: 404px) and (max-width: 515px) {
+  h4 {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 129px 90px; } }
+
+@media only screen and (min-width: 516px) and (max-width: 653px) {
+  h4 {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 170px 90px; } }
+
+@media only screen and (min-width: 654px) and (max-width: 857px) {
+  h4 {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 245px 150px; } }
+
+@media only screen and (min-width: 858px) and (max-width: 995px) {
+  h4 {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 320px 150px; }
+  .carousel-item .carousel-item-texto {
+    display: none; } }
+
+@media only screen and (min-width: 996px) and (max-width: 1239px) {
+  .logo {
+    width: 15vw; }
+  h4 {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0 0 380px 210px; }
+  .carousel-item .carousel-item-texto {
+    display: none; } }

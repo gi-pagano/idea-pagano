@@ -33,11 +33,10 @@ h3 {
 
 h4 {
     color: $light-ocean;
-    @include fuente('norm', '700', 'md');
-    background: rgb(155, 153, 153);
-    background: rgba(95, 93, 93, 0.7);
-    margin-bottom: size(6);
+    @include fuente('norm', '700', 'xl');
     padding: size(1) - 2;
+    width: percentage(4.5);
+    margin-left: size(26);
 }  
 
 p {

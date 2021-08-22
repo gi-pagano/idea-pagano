@@ -15,20 +15,22 @@
 //londres y tokio// 
 .grid-city {
     @include grid-column;
-    grid-template-rows: 100px 600px 1300px;
+    grid-template-rows: 130px 600px 1330px;
     grid-template-areas: "title title"
                          "itinerario video"
                          "galeria galeria";
     column-gap: 40px;  
     .grid-city-title {
       grid-area: title;
-      margin-top: size(-3);
+      margin-top: size(-1);
     }  
     .grid-city-video {
       grid-area: video;
       margin-top: size(4);
-      
+      width: 560px;
+      height: 315px; 
     }
+
     .grid-city-galeria {
       grid-area: galeria;
     }
