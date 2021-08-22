@@ -213,6 +213,7 @@
     } 
 }
 
+//recomendados//
 @media only screen and (min-width: 991px) and (max-width: 1300px) {
   .grid-recommend {
     @include grid-row;
@@ -254,6 +255,20 @@
 }  
 
 //Londres y Tokyo//
+@media only screen and (min-width: 1600px) {
+  .grid-city {
+    grid-template-rows: 130px 800px 1250px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }  
+
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: size(65);
+    height: size(40);
+  }
+}  
+
 @media only screen and (min-width: 836px) and (max-width: 1330px) {
   .grid-city {
     @include grid-row;
@@ -315,7 +330,7 @@
   .grid-city .grid-city-video {
     justify-self: center;
     width: size(35);
-    height: 200px;
+    height: size(20);
   }
 
   .container-galeria-img {
@@ -506,3 +521,36 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 1403px) and (max-width: 1607px) {
+  h4 {
+    @include fuente('norm', '700', 'xl');
+    margin: 0 0 0 280px;  
+  } 
+
+  .carousel-item-texto {
+		margin: 0 0 520px 0;
+	}
+} 
+
+@media only screen and (min-width: 1608px) and (max-width: 1872px) {
+  h4 {
+    @include fuente('norm', '700', 'xl');
+    margin: 0 0 0 280px;  
+  } 
+
+  .carousel-item-texto {
+		margin: 0 0 620px 0;
+	}
+}  
+
+@media only screen and (min-width: 1873px) {
+  h4 {
+    @include fuente('norm', '700', 'xl');
+    margin: 0 0 0 400px;  
+  } 
+
+  .carousel-item-texto {
+		margin: 0 -70px 700px 0;
+	}
+}  

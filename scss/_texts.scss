@@ -40,7 +40,6 @@ h4 {
 }  
 
 p {
-    
     @include fuente('norm', 'no', 'xs');
     color: $light-ocean;
     text-align: justify;
