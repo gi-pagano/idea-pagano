@@ -2,8 +2,11 @@
 .btn-1 {
 	@include boton;
     @include fuente('norm', '800', 'xs');
+    box-shadow: 0 0 40px 40px $dark-ocean inset, 0 0 0 0 $dark-ocean;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
 	&:hover {
-		background-color: $pinky;
+		box-shadow: 0 0 10px 0 $light-ocean inset, 0 0 10px 4px $light-ocean;
 		
 	}
 }
@@ -11,9 +14,12 @@
 .btn-2 {
 	@include boton;
     @include fuente('norm', '800', 'xs');
+	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 	&:hover {
-		background-color: $pinky;
-		
+		box-shadow: 0 0 40px 40px $light-ocean inset;
+		color: $dark-ocean;	
+		font-weight: bold;
 	}
 } 
 

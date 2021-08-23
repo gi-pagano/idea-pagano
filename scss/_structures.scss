@@ -11,6 +11,13 @@
 	margin: 20px auto auto 80px;
 }
 
+.text-question {
+	border-radius: size(0.5);
+	padding: size(1.5);
+	margin-top: size(5);
+	box-shadow: 0 0 10px 0 $light-pink inset, 0 0 10px 4px $light-pink;
+}
+
 form {
 	grid-area: formulario;
 	margin: 0 0 0 10px;

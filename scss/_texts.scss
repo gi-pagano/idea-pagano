@@ -28,7 +28,9 @@ h2 {
 h3 {
     margin-left: size(2);
     @include fuente('norm', '500', 'sm');
-    color: $light-ocean
+    color: $light-ocean;
+    border-bottom: double $light-ocean;
+    padding-top: size(1);
 }  
 
 h4 {
@@ -42,7 +44,7 @@ h4 {
 p {
     @include fuente('norm', 'no', 'xs');
     color: $light-ocean;
-    text-align: justify;
+    text-align: left;
     padding-top: size(2);  
 }
 
@@ -97,11 +99,6 @@ p {
     }
 }
 
-//contacto//
-.h1-align {
-    text-align: start; 
-}
-
 //quienes somos//
 
 .nosotros-div { 
@@ -113,6 +110,8 @@ p {
     margin: 60px auto auto 80px;
     position: relative;
     padding: size(5);
+    animation-name: bounceInLeft;
+    animation-duration: 1.5s;
 }
 
 //londres y tokio//

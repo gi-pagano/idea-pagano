@@ -68,11 +68,39 @@
       padding: 20px 40px 0 30px
     }
 
+//contacto (hay una querie de contacto para min:800px más abajo// 
+    .grid-contacto {
+      @include grid-row;
+      grid-template-rows: 40px 250px 900px;
+      grid-template-areas: "contact-title"
+                          "contact-txt" 
+                          "formulario";
+      row-gap: size(0);  
+      .h1-contacto {
+        margin-top: size(1);
+      }                     
+    } 
+
+    .contact-txt {
+      margin-right: size(3);
+    } 
+
+    .text-question {
+      margin-top: 0;
+    }
+
+    .contacto-img {
+      width: 50%;
+      padding-top: size(5);
+    }
+//fin contacto// 
+
 //nosotros//
     .grid-nosotros {
       @include grid-row;
-      grid-template-rows: 600px 400px;
-      grid-template-areas:  "nosotros"
+      grid-template-rows: 70px 600px 500px;
+      grid-template-areas:  "nosotros-title"
+                            "nosotros"
                             "img-nosotros";
       justify-content: center;                                                   
     }  
@@ -92,31 +120,27 @@
     }
 
     .nosotros-img {
-      width: $total-width;
-      padding:0;
-      height: 350px;
+      justify-self: center;
+      padding:0; 
     }
+//fin nosotros//
 
 //recomendados//
     .grid-recommend {
       @include grid-row;
-      grid-template-rows: 80px 400px 400px;
+      grid-template-rows: 80px 800px 800px;
+      margin: 0;
       grid-template-areas: "title"
                           "londres" 
                           "tokyo"; 
       .grid-recommend-title {
-        margin-top: 0;
+        margin-top: size(5);
       }                      
     }
 
-    .recommend-img {
-      width: $total-width;
-      height: auto;
-    }
-    
-    .london-img {
-      margin-left: size(0);
-    }
+    figure {
+      width: 280px;
+    }  
 }                       
 
 @media only screen and (min-width: 577px) and (max-width: 990px) {
@@ -171,11 +195,12 @@
     }
     
 
-//nosotros//
+//nosotros hay otro querie para pantallas grandes más abajo//
     .grid-nosotros {
       @include grid-row;
-      grid-template-rows: 500px 600px;
-      grid-template-areas:  "nosotros"
+      grid-template-rows: 100px 500px 600px;
+      grid-template-areas:  "nosotros-title"
+                            "nosotros"
                             "img-nosotros";
       justify-content: center;                                                   
     }
@@ -187,72 +212,104 @@
     }
 
     .nosotros-img {
-      width: 80%;
-      margin-left: size(6);
+      height: size(45);
       justify-self: center;
-      height: 550px;
     }
+}    
 
 //recomendados//
+@media only screen and (min-width: 577px) and (max-width: 1250px) {
     .grid-recommend {
       @include grid-row;
-      grid-template-rows: 80px 700px 700px;
+      grid-template-rows: 100px 800px 800px;
+      margin: 0;
       grid-template-areas: "title"
                           "londres" 
                           "tokyo"; 
       .grid-recommend-title {
-        margin-top: 0;
+        margin-top: size(5);
       }                      
     }
-    .recommend-img {
-      width: $total-width;
-      height: 500px;
-    } 
-    .london-img {
-      margin-left: size(0);
-    } 
 }
 
+//nosotros y recomendados pantallas grandes//
+@media only screen and (min-width: 1691px) {
+//nosotros//  
+  .grid-nosotros {
+    grid-template-rows: 130px 1000px;
+  }  
+
+  .nosotros-div {
+    margin: 150px 0 0 450px;
+    width: 60%;
+  }
+
+  .nosotros-img {
+    height: size(75);
+    padding-right: size(20);
+  }
+
 //recomendados//
-@media only screen and (min-width: 991px) and (max-width: 1300px) {
   .grid-recommend {
-    @include grid-row;
-    grid-template-rows: 80px 700px 700px;
-    grid-template-areas: "title"
-                        "londres" 
-                        "tokyo"; 
-    .grid-recommend-title {
-      margin-top: 0;
-    }                      
+    margin: 10px 220px 0 220px;  
   }
-  .recommend-img {
-    width: $total-width;
-    height: 500px;
-  } 
-  .london-img {
-    margin-left: size(0);
-  }
-} 
+}  
  
-//formulario contacto//
+//contacto//
 @media only screen and (max-width: 800px) {
 
   .grid-contacto {
     @include grid-row;
-    grid-template-rows: 500px 900px;
-    grid-template-areas: "contact-txt" 
-                         "formulario";  
+    grid-template-rows: 100px 500px 900px;
+    grid-template-areas: "contact-title"
+                         "contact-txt" 
+                         "formulario";
+    row-gap: size(3);  
+    .h1-contacto {
+      margin-top: size(3);
+    }                     
   } 
 
   .contact-txt {
-    margin-right: size(2);
+    margin-right: size(3);
   } 
 
   .contacto-img {
     width: 30%;
     padding-top: size(5);
   }
-}  
+} 
+
+@media only screen and (max-width: 433px) {
+  .grid-contacto {
+    @include grid-row;
+    grid-template-rows: 40px 450px 900px;
+    grid-template-areas: "contact-title"
+                         "contact-txt" 
+                         "formulario";
+    row-gap: size(1);  
+    .h1-contacto {
+      margin-top: size(1);
+    }                     
+  } 
+
+  .contact-txt {
+    margin-right: size(3);
+  } 
+
+  .text-question {
+    margin-top: 0;
+  }
+
+  .contacto-img {
+    width: 40%;
+    padding-top: size(5);
+  }
+
+  form label {
+    padding-left: 50px;
+  }
+}
 
 //Londres y Tokyo//
 @media only screen and (min-width: 1600px) {
@@ -310,7 +367,7 @@
   }
 }
 
-@media only screen and (min-width: 409px) and (max-width: 559px) {
+@media only screen and (min-width: 426px) and (max-width: 559px) {
   
   .grid-city {
     @include grid-row;
@@ -338,7 +395,7 @@
   }  
 }
 
-@media only screen and (max-width: 408px) {
+@media only screen and (max-width: 425px) {
 
   .grid-city {
     @include grid-row;
