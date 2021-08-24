@@ -13,6 +13,7 @@
     width: percentage(5);
     padding-top: size(22);
     align-self: center;
+    border-radius: size(5);
 }  
 
 /*css galeria*/
@@ -52,89 +53,8 @@
 .tokyo-img {
   grid-area: tokyo;
 }
-
-figure {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 550px;
-	height: 620px;
-	border-radius: 10px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	overflow: hidden;
-	&:hover {
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-		img {
-			transform: scale(1.25);
-		}
-		figcaption {
-			bottom: 0;
-		}
-	}
-	h2 {
-		position: absolute;
-		top: 50px;
-		left: 20px;
-		margin: 0;
-		padding: 0;
-		color: $dark-ocean;
-		font-size: 60px;
-		font-weight: 100;
-		line-height: 1;
-	}
-	img {
-		height: 100%;
-		transition: 0.25s;
-	}
-	figcaption {
-		position: absolute;
-		bottom: -33%;
-		left: 0;
-		width: 100%;
-		//height: 50%;
-		margin: 0;
-		padding: 30px;
-		background-color: rgba(black,0.85);
-		box-shadow: 0 0 20px rgba(black,0.4);
-		color: $light-ocean;
-		line-height: 1;
-		transition: 0.25s;
-		h3 {
-			margin: 0 0 20px;
-			padding: 0;
-		}
-		p {
-			font-size: 14px;
-			line-height: 1.75;
-		}
-		button {
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin: 10px 0 0;
-			padding: 10px 30px;
-			background-color: $dark-ocean;
-			border: none;
-			border-radius: 5px;
-			color: $light-ocean;
-			font-size: 14px;
-		}
-	}
-}
 //fin recomendados//
 
-//servicios//
-.img-svc-style {
-  @include servicios;
-  .img-svc {
-      @include img-svc;
-      padding-left: size(11);
-       
-  }
-}
 
 
 

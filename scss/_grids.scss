@@ -64,6 +64,36 @@
   }                                       
 }
 
+//servicios//
+.grid-svc {
+  @include grid-column;
+  grid-template-rows: 130px 650px 650px 200px;
+  row-gap: size(7);
+  margin: 10px 70px 0 70px;
+  justify-items: center;
+  grid-template-areas: "svc-title svc-title"
+                       "itinerario hotel"
+                       "otros otros"
+                       "btn-svc btn-svc";
+  .svc-title {
+    grid-area: svc-title;
+    margin-top: size(8);
+  }
+  .itinerario-card {
+    grid-area: itinerario;
+  }
+  .hotel-card {
+    grid-area: hotel;
+  }
+  .otros-card {
+    grid-area: otros;
+  }  
+	.btn-svc {
+    grid-area: btn-svc;
+	  
+	} 
+}                     
+
 //error 404//
 .error-grid {
   @include grid-column;

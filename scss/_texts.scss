@@ -3,11 +3,6 @@ h1 {
     text-align: center;
     color: $light-ocean;
     @include fuente('norm', 'no', 'md');
-    strong {
-        background: $dark-ocean;
-        margin-top: size(10);
-        margin-right: size(9);
-    }
 }
 
 .h1-style {
@@ -41,6 +36,13 @@ h4 {
     margin-left: size(26);
 }  
 
+h5 {
+	@include fuente('norm', '500', 'sm');
+	color: $dark-ocean;
+    padding: size(2);
+    text-align: center;
+  }
+
 p {
     @include fuente('norm', 'no', 'xs');
     color: $light-ocean;
@@ -51,52 +53,36 @@ p {
 //index//
 .container-summary {  
     @include flex-column;
-	margin: 100px 0 100px 0;
+    align-items: center;
+    margin-top: size(10);
 
     .container-summary-line {
-        border-bottom: 1px solid $light-ocean;
+        border-bottom: 1px double $light-ocean;
+        padding: size(1);
     }
 
     .container-summary-text {
         color: $light-ocean;
         @include fuente('norm', 'no', 'xs');
-        text-align: justify;
-        padding: 70px 150px 0 40px;
+        margin: 30px 200px 30px 200px;
+        text-align: center; 
     }
 
     .container-summary-img {
-        width: percentage(2);
-        align-self: center;
-        margin: 60px 70px 25px 0;
+        width: percentage(1);
+        margin-top: size(4);
     }
 }
 
 //aside en index//
 .covid-title {
 	text-align: center;
-	color: $dark-ocean;
-	font-size: 2.5rem;
-	padding-top: size(10);
-	margin-left: 2px;
-}
-.covid-text {
-	color: $dark-ocean;
-	font-size: 1.8rem;
-	text-align: center;
-	padding: 20px 20px 0 10px;
+    font-size: 2rem;	
 }
 
-//alerta//
-.alert-warning {
-    color: $dark-ocean;
-    background-color: $light-ocean;
-    border-color: $light-pink;
-    @include fuente('norm', 'no', 'sm');
-    text-align: center;
-    margin-bottom: size(5);
-    &:hover {
-        transform: scale(1.2);
-    }
+.covid-text {
+	text-align: center;
+    font-size: 1.6rem;	
 }
 
 //quienes somos//
@@ -117,20 +103,9 @@ p {
 //londres y tokio//
 a {
     color: $pinky;
+    text-decoration: none;
     &:hover {
         color: $dark-ocean; 
     }
   }
 
-//servicios//
-.h2-servicios {
-    margin-left: size(-2.5);
-  } 
-  
-.svc-title {
-    margin: 80px 0 80px 0;
-}
-
-.svc-padding {
-    margin: 0 40px 0 40px;
-}

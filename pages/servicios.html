@@ -60,48 +60,35 @@
       </header>
 
       <!--servicios--> 
-      <h1 class= "svc-title h1-style">Nuestros servicios</h1>
+      <div class="grid-svc">
+        <h1 class= "svc-title h1-style">Nuestros servicios</h1>
 
-      <section class= "flex-servicios">
-        <div class= "flex-hotel"> 
-          <div class= "subcontainer-servicios"><!--hoteleria-->
-            <h2 class="h2-servicios">Hotelería</h2>
-            <p class="svc-padding">En base a tu itinerario, te recomendamos los mejores hoteles que se ajusten a tu presupuesto. ¿Buscás alguna categoría, estilo, ubicación especial? Estamos para ayudarte. Te planteamos varias propuestas...¡vos elegís!</p>
-          </div>
-          <div class= "img-svc-style"> 
-            <img class="img-svc" src="../images/servicios/hotel.png" alt= "imagen de  un hotel">
-          </div>
+        <div class="card card-svc itinerario-card">
+          <h2 class="card-title">Itinerarios</h2>
+          <img src="../images/servicios/viajeros.jpg" alt="mapas">
+          <p class="card-desc">Armamos itinerarios personalizados a tu medida. ¿Querés conocer los lugares típicos de las ciudades que visitás o preferís adentrarte en la aventura y explorar lugares distintos que la mayoría no conoce? Depende de vos, tus gustos y tus ganas. ¿Preferís los lugares al aire libre o visitar un museo? ¿Te animás a alquilar un auto y visitar pueblitos autóctonos? Contanos, te ayudamos y te armamos el itinerario perfecto para vos.</p>
         </div>
 
-        
-        <div class= "flex-itinerario"> 
-          <div class= "subcontainer-servicios"><!--itinerarios--> 
-            <h2 class="h2-servicios">Itinerarios</h2>
-            <p class="svc-padding">Armamos itinerarios personalizados a tu medida. ¿Querés conocer los lugares típicos de las ciudades que visitás o preferís adentrarte en la aventura y explorar lugares distintos que la mayoría no conoce? Depende de vos, tus gustos y tus ganas. ¿Preferís los lugares al aire libre o visitar un museo? ¿Te animás a alquilar un auto y visitar pueblitos autóctonos? Contanos, te ayudamos y te armamos el itinerario perfecto para vos.</p>
-          </div>
+        <div class="card card-svc hotel-card">
+          <h2 class="card-title">Hotelería</h2>
+          <img src="../images/servicios/hotel.jpg" alt="cuarto de hotel">
+          <p class="card-desc">En base a tu itinerario, te recomendamos los mejores hoteles que se ajusten a tu presupuesto. ¿Buscás alguna categoría, estilo, ubicación especial? Estamos para ayudarte. Te planteamos varias propuestas...¡vos elegís!</p>
+        </div>
 
-          <div class= "img-svc-style">
-            <img class="img-svc" src="../images/servicios/viajeros.png" alt= "pareja viajera">
-          </div>
-        </div> 
-
-        <div class= "flex-hotel">
-          <div class= "subcontainer-servicios"><!--otros servicios-->      
-            <h2 class="h2-servicios">Servicios adicionales</h2>
-            <p class="svc-padding">Si querés podemos ayudarte con los pasajes de aviones, trenes, alquiler de autos,etc. Podemos recomendarte tours ya armados y nuestros restaurantes favoritos. Animate a probar la gastronomía de cada ciudad de una forma diferente. ¿Se te ocurre alguna otra idea? Decinos, nos encanta escuchar a nuestros clientes. </p> 
-          </div>
-
-          <div class="img-svc-style">
-            <img class="img-svc" src="../images/servicios/otros.png" alt= "chica con medios de transporte">
-          </div>
-        </div>  
-             
+        <div class="card card-svc otros-card">
+          <h2 class="card-title">Otros servicios</h2>
+          <img src="../images/servicios/otros.jpg" alt="imagen de pasajes">
+          <p class="card-desc">Si querés podemos ayudarte con los pasajes de aviones, trenes, alquiler de autos,etc. Podemos recomendarte tours ya armados y nuestros restaurantes favoritos. Animate a probar la gastronomía de cada ciudad de una forma diferente. ¿Se te ocurre alguna otra idea? Decinos, nos encanta escuchar a nuestros clientes.</p>
+        </div>
+          
         <div class= "btn-svc"><!--boton de accion--> 
           <a href="contacto.html">
-            <input class= "btn-3" type="submit" value="¡Quiero mi itinerario a medida!">
+            <div class="btn-quiero btn-efecto">
+              <h5>¡Quiero mi itinerario a medida!</h5>
+            </div>
           </a>  
         </div>
-      </section> 
+      </div> 
 
       <div class= "container-foot container-fluid">
         <div class= "row">

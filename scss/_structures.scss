@@ -1,7 +1,10 @@
 //aside en index//
 .aside-sty {
-	background-color: $light-pink;
-	margin: 40px 0 40px 0;
+	border: 1px double $light-ocean;
+	border-radius: size(1);
+	justify-self: center;
+	padding: size(1);
+	margin: 50px 0 50px 0;
 }
 
 //formulario//
@@ -77,32 +80,5 @@ form {
 	margin-top: size(3);
   }
 
-//flex de container servicios//
-.subcontainer-servicios {
-    @include flex-column;
-    justify-content: center;
-    align-items: center;
-    background-color: $dark-ocean;
-	width: size(60);
-  }  
-
-//servicios//
-.flex-servicios {
-	@include flex-column;
-	align-content: center;
-	margin: 50px 0 0 70px;
-
-	.flex-hotel {
-	  @include flex-row;
-	}
-	.flex-itinerario {
-		display: flex;
-		flex-direction: row-reverse;
-		margin-right: 76px;
-	}
-  
-	.btn-svc {
-	  margin: 0 0 50px 500px;
-	  width:50%;
-	}                  
-  }  
+                 
+   

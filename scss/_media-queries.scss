@@ -64,9 +64,19 @@
       padding: 10px 20px 0 20px;
     }
 
-    .covid-text {
-      padding: 20px 40px 0 30px
+    .container-summary .container-summary-text {
+      padding: 50px 10px 0 10px;
+      margin:0;
     }
+
+    div.cards {
+      width: size(20)
+    }
+
+    div.card {
+      flex-direction: column;
+    }  
+
 
 //contacto (hay una querie de contacto para min:800px más abajo// 
     .grid-contacto {
@@ -184,6 +194,7 @@
 
     .container-summary .container-summary-text {
       padding: 70px 40px 0 40px;
+      margin:0;
     }
 
     .container-summary .container-summary-img {
@@ -194,6 +205,9 @@
       padding-top: 10px;
     }
     
+    div.cards {
+      margin: 80px 0 80px 150px;
+    }
 
 //nosotros hay otro querie para pantallas grandes más abajo//
     .grid-nosotros {
@@ -523,6 +537,10 @@
     @include fuente('norm', '700', 'sm');
     margin: 0 0 70px 70px;
   }  
+
+  div.cards {
+    margin: 80px 0 80px 50px;
+  }  
 }  
 
 @media only screen and (min-width: 310px) and (max-width: 403px) {
@@ -530,12 +548,20 @@
     @include fuente('norm', '700', 'sm');
     margin: 0 0 90px 80px;
   } 
+
+  div.cards {
+    margin: 80px 0 80px 70px;
+  }  
 }
 
 @media only screen and (min-width: 404px) and (max-width: 515px) {
   h4 {
     @include fuente('norm', '700', 'md');
     margin: 0 0 129px 90px;
+  }  
+
+  div.cards {
+    margin: 80px 0 80px 130px;
   }  
 }
 
