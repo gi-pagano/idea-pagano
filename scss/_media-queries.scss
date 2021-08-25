@@ -1,87 +1,8 @@
-//576 mobile, 768 tablets, desde 990 laptops//
-
-
-@media only screen and (max-width: 576px) {
-//navbar//
-    nav li {
-      border-right: none;
-      padding: 0; 
-    } 
-
-    .logo{
-      width: 30vw;
-    }
-
-//footer// 
-
-    .container-foot .container-foot_layout {
-      height: size(15);
-      @include flex-column;
-    }
-
-    .container-foot .container-foot_layout .copyright-layout {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .container-foot .container-foot_layout .copyright-layout .logo-footer {
-      margin-left: 0;
-      width: size(3);
-    }
-
-    .container-foot .container-foot_layout .slogan {
-      margin-left: 0;
-    }
-
-    .container-foot .container-foot_layout .icons-redes {
-      margin: 0 0 5px 5px;
-      width: size(3);
-    }
-
-//index// 
-    .carousel-item .carousel-item-texto {
-      display: none;
-    }
-
-    h1 strong {
-      background: none;
-      margin-right: 0;
-    }
-  
-    .container-summary .container-summary-line {
-      border-bottom: none;
-    }
-
-    .container-summary .container-summary-text {
-      padding: 70px 40px 0 40px;
-    }
-
-    .container-summary .container-summary-img {
-      margin: 60px 0 25px 0;
-    }
-
-    .covid-title {
-      padding: 10px 20px 0 20px;
-    }
-
-    .container-summary .container-summary-text {
-      padding: 50px 10px 0 10px;
-      margin:0;
-    }
-
-    div.cards {
-      width: size(20)
-    }
-
-    div.card {
-      flex-direction: column;
-    }  
-
-
+@media only screen and (min-width: 434px) and (max-width: 576px) {
 //contacto (hay una querie de contacto para min:800px más abajo// 
     .grid-contacto {
       @include grid-row;
-      grid-template-rows: 40px 250px 900px;
+      grid-template-rows: 40px 500px 900px;
       grid-template-areas: "contact-title"
                           "contact-txt" 
                           "formulario";
@@ -101,7 +22,7 @@
 
     .contacto-img {
       width: 50%;
-      padding-top: size(5);
+      margin-top: size(5);
     }
 //fin contacto// 
 
@@ -133,83 +54,10 @@
       justify-self: center;
       padding:0; 
     }
-//fin nosotros//
-
-//recomendados//
-    .grid-recommend {
-      @include grid-row;
-      grid-template-rows: 80px 800px 800px;
-      margin: 0;
-      grid-template-areas: "title"
-                          "londres" 
-                          "tokyo"; 
-      .grid-recommend-title {
-        margin-top: size(5);
-      }                      
-    }
-
-    figure {
-      width: 280px;
-    }  
 }                       
 
 @media only screen and (min-width: 577px) and (max-width: 990px) {
-//navbar//
-    nav li {
-      border-right: none;
-      padding: 0; 
-    } 
-
-    .logo{
-      width: 20vw;
-    }
-    
-//footer// 
-    .container-foot .container-foot_layout {
-      height: size(13);
-      @include flex-column;
-      justify-content: center;
-    }   
-      
-    .container-foot .container-foot_layout .copyright-layout .logo-footer {
-      margin-left: 0;
-    }
-
-    .container-foot .container-foot_layout .slogan {
-      margin-left: 0;
-    }
-
-    .container-foot .container-foot_layout .icons-redes {
-      margin: 10px 0 5px 0;
-    }
-
-//index// 
-    .carousel-item .carousel-item-texto {
-      display: none;
-    }
-
-    h1 strong {
-      margin-left: size(7);
-    }
-
-    .container-summary .container-summary-text {
-      padding: 70px 40px 0 40px;
-      margin:0;
-    }
-
-    .container-summary .container-summary-img {
-      margin: 60px 0 25px 0;
-    }
-
-    .covid-title {
-      padding-top: 10px;
-    }
-    
-    div.cards {
-      margin: 80px 0 80px 150px;
-    }
-
-//nosotros hay otro querie para pantallas grandes más abajo//
+//nosotros, hay otro querie para pantallas grandes más abajo//
     .grid-nosotros {
       @include grid-row;
       grid-template-rows: 100px 500px 600px;
@@ -246,6 +94,25 @@
     }
 }
 
+@media only screen and (max-width: 576px) {
+.grid-recommend {
+  @include grid-row;
+  grid-template-rows: 80px 800px 800px;
+  margin: 0;
+  grid-template-areas: "title"
+                      "londres" 
+                      "tokyo"; 
+  .grid-recommend-title {
+    margin-top: size(5);
+  }                      
+}
+
+  .size-responsive {
+    width: 280px;
+    height: 550;
+  }
+}    
+
 //nosotros y recomendados pantallas grandes//
 @media only screen and (min-width: 1691px) {
 //nosotros//  
@@ -269,8 +136,8 @@
   }
 }  
  
-//contacto//
-@media only screen and (max-width: 800px) {
+//contacto y nosotros//
+@media only screen and (min-width: 577px) and (max-width: 800px) {
 
   .grid-contacto {
     @include grid-row;
@@ -290,7 +157,7 @@
 
   .contacto-img {
     width: 30%;
-    padding-top: size(5);
+    margin-top: size(5);
   }
 } 
 
@@ -307,6 +174,10 @@
     }                     
   } 
 
+  .h1-style {
+    @include fuente('norm', '700', 'sm');
+    } 
+
   .contact-txt {
     margin-right: size(3);
   } 
@@ -317,197 +188,110 @@
 
   .contacto-img {
     width: 40%;
-    padding-top: size(5);
+    margin-top: size(5);
   }
 
   form label {
     padding-left: 50px;
   }
-}
 
-//Londres y Tokyo//
-@media only screen and (min-width: 1600px) {
-  .grid-city {
-    grid-template-rows: 130px 800px 1250px;
-    margin-left: 200px;
-    margin-right: 200px;
+  .grid-nosotros {
+    @include grid-row;
+    grid-template-rows: 70px 600px 500px;
+    grid-template-areas:  "nosotros-title"
+                          "nosotros"
+                          "img-nosotros";
+    justify-content: center;                                                   
   }  
 
-  .grid-city .grid-city-video {
-    justify-self: center;
-    width: size(65);
-    height: size(40);
-  }
-}  
-
-@media only screen and (min-width: 836px) and (max-width: 1330px) {
-  .grid-city {
-    @include grid-row;
-    grid-template-rows: 100px 600px 400px 1800px;
-    grid-template-areas: "title"
-                         "itinerario" 
-                         "video"
-                         "galeria";
-
-  }
-
-  .grid-city-container {
-    margin-right: size(4);
-  }
-
-  .grid-city .grid-city-video {
-    justify-self: center;
-  }
-}  
-
-@media only screen and (min-width: 560px) and (max-width: 835px) {
-  .grid-city {
-    @include grid-row;
-    grid-template-rows: 100px 700px 400px 3200px;
-    grid-template-areas: "title"
-                         "itinerario" 
-                         "video"
-                         "galeria";
-
-  }
-
-  .grid-city-container {
-    margin-right: 20px;
-    margin-left: 20px;
-  }  
-
-  .grid-city .grid-city-video {
-    justify-self: center;
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 559px) {
+  .h1-style {
+    @include fuente('norm', '700', 'sm');
+  } 
   
-  .grid-city {
-    @include grid-row;
-    grid-template-rows: 100px 700px 500px 3200px;
-    grid-template-areas: "title"
-                         "itinerario" 
-                         "video"
-                         "galeria";
-
+  p {
+    @include fuente('norm', 'no', 'xxs');
   }
 
-  .grid-city-container {
-    margin-right: 20px;
-    margin-left: 20px;
-  }  
+  .nosotros-div {
+    margin: 10px 20px 0 20px;
+    width: auto;
+    padding: size(2);
+  }
 
-  .grid-city .grid-city-video {
+  .nosotros-img {
     justify-self: center;
-    width: size(35);
-    height: size(20);
+    padding:0; 
   }
-
-  .container-galeria-img {
-    width: size(28);
-  }  
-}
-
-@media only screen and (max-width: 425px) {
-
-  .grid-city {
-    @include grid-row;
-    grid-template-rows: 100px 1150px 350px 3200px;
-    grid-template-areas: "title"
-                         "itinerario" 
-                         "video"
-                         "galeria";
-
-  }
-
-  .grid-city-container {
-    margin-right: 20px;
-    margin-left: 20px;
-  }  
-
-  .grid-city .grid-city-video {
-    justify-self: center;
-    width: size(25);
-    height: size(15);
-  }
-
-  .container-galeria-img {
-    width: size(15);
-    height: size(15);
-  }  
-}
+}               
 
 //servicios//
-@media only screen and (min-width: 908px) and (max-width: 1330px) {
+@media only screen and (min-width: 1650px) {
+  .grid-svc {
+    margin: 10px 150px 0 150px;
+  }  
+}    
 
-.flex-servicios .flex-hotel {
-  @include flex-column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.flex-servicios .flex-itinerario {
-  @include flex-column;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-right: 0;
+@media only screen and (min-width: 1134px) and (max-width: 1234px) {
+  .grid-svc {
+    margin: 10px 5px 0 5px;
+  }  
 } 
 
-.btn-3 {
-  @include fuente('norm', 'no', 'xs');
-  width: 100%;
+@media only screen and (min-width: 600px)and (max-width: 1133px) {
+  .grid-svc {
+  @include grid-row;
+  grid-template-rows: 130px 650px 650px 650px 200px;
+  row-gap: size(4);
+  margin: 10px 5px 0 5px;
+  grid-template-areas: "svc-title"
+                       "itinerario" 
+                       "hotel"
+                       "otros"
+                       "btn-svc";
+  }
 }
 
-.flex-servicios .btn-svc {
-  align-self: center;
-  width:80%;
-  margin-left: 50px;
-}  
-} 
-
-@media only screen and (max-width: 908px) {
-  .flex-servicios {
-   margin: 0;
-   .flex-servicios .flex-hotel {
-    @include flex-column;
-    flex-wrap: wrap;
-    align-items: center;
+@media only screen and (min-width: 600px)and (max-width: 1133px) {
+  .grid-svc {
+  @include grid-row;
+  grid-template-rows: 130px 650px 650px 650px 200px;
+  row-gap: size(4);
+  margin: 10px 5px 0 5px;
+  grid-template-areas: "svc-title"
+                       "itinerario" 
+                       "hotel"
+                       "otros"
+                       "btn-svc";
   }
-  .flex-servicios .flex-itinerario {
-    @include flex-column;
-    flex-wrap: wrap;
-    align-items: center;
-  }  
-  } 
-  .flex-servicios .btn-svc {
-    margin-left: 80px;
-    width: 80%;
-  }  
+}
 
-  .btn-3 {
-    @include fuente('norm', 'no', 'xxs');
-    width: 100%;
+@media only screen and (max-width: 599px) {
+  .grid-svc {
+  @include grid-row;
+  grid-template-rows: 130px 650px 650px 650px 200px;
+  row-gap: size(4);
+  margin: 10px 0 0 0;
+  grid-template-areas: "svc-title"
+                       "itinerario" 
+                       "hotel"
+                       "otros"
+                       "btn-svc";
   }
 
-  .flex-servicios .flex-hotel {
-    @include flex-column;
-    flex-wrap: wrap;
-    align-items: center;
+  .card.card-svc {
+    width: size(28);
+    height: size(50);
+    margin: 40px auto 40px auto;
   }
-  .subcontainer-servicios {
-    width: 330px;
-    margin: 0 10px 100px 10px;
 
+  .btn-quiero {
+    margin: 40px auto 40px auto;
   }
-  .img-svc-style {
-    display: none;
-    }
+}
 
-  }
   
- 
+//404 error page// 
 @media only screen and (max-width: 850px) {  
- //404 error page//
 .error-grid {
   @include grid-column;
   grid-template-areas: "error-title"
@@ -519,121 +303,3 @@
 }
 }
 
-//menu hamburguesa//
-@media only screen and (max-width: 991px) {
-  .navbar-light .navbar-nav .nav-link {
-    text-align: right;
-  }
-
-  li .active-page {
-    border-bottom: none;
-		transform: none;
-	}
-}  
-
-//carrusel texto//
-@media only screen and (max-width: 309px) {
-  h4 {
-    @include fuente('norm', '700', 'sm');
-    margin: 0 0 70px 70px;
-  }  
-
-  div.cards {
-    margin: 80px 0 80px 50px;
-  }  
-}  
-
-@media only screen and (min-width: 310px) and (max-width: 403px) {
-  h4 {
-    @include fuente('norm', '700', 'sm');
-    margin: 0 0 90px 80px;
-  } 
-
-  div.cards {
-    margin: 80px 0 80px 70px;
-  }  
-}
-
-@media only screen and (min-width: 404px) and (max-width: 515px) {
-  h4 {
-    @include fuente('norm', '700', 'md');
-    margin: 0 0 129px 90px;
-  }  
-
-  div.cards {
-    margin: 80px 0 80px 130px;
-  }  
-}
-
-@media only screen and (min-width: 516px) and (max-width: 653px) {
-  h4 {
-    @include fuente('norm', '700', 'md');
-    margin: 0 0 170px 90px;  
-  } 
-}  
-
-@media only screen and (min-width: 654px) and (max-width: 857px) {
-  h4 {
-    @include fuente('norm', '700', 'md');
-    margin: 0 0 245px 150px;  
-  } 
-}
-
-@media only screen and (min-width: 858px) and (max-width: 995px) {
-  h4 {
-    @include fuente('norm', '700', 'md');
-    margin: 0 0 320px 150px;  
-  } 
-
-  .carousel-item .carousel-item-texto {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 996px) and (max-width: 1239px) {
-  .logo{
-    width: 15vw;
-  }
-
-  h4 {
-    @include fuente('norm', '700', 'lg');
-    margin: 0 0 380px 210px;  
-  } 
-
-  .carousel-item .carousel-item-texto {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1403px) and (max-width: 1607px) {
-  h4 {
-    @include fuente('norm', '700', 'xl');
-    margin: 0 0 0 280px;  
-  } 
-
-  .carousel-item-texto {
-		margin: 0 0 520px 0;
-	}
-} 
-
-@media only screen and (min-width: 1608px) and (max-width: 1872px) {
-  h4 {
-    @include fuente('norm', '700', 'xl');
-    margin: 0 0 0 280px;  
-  } 
-
-  .carousel-item-texto {
-		margin: 0 0 620px 0;
-	}
-}  
-
-@media only screen and (min-width: 1873px) {
-  h4 {
-    @include fuente('norm', '700', 'xl');
-    margin: 0 0 0 400px;  
-  } 
-
-  .carousel-item-texto {
-		margin: 0 -70px 700px 0;
-	}
-}  

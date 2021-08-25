@@ -678,58 +678,7 @@ figure.pic11 {
   div.cards {
     width: 200px; }
   div.card {
-    flex-direction: column; }
-  .grid-contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 40px 250px 900px;
-    grid-template-areas: "contact-title" "contact-txt"  "formulario";
-    row-gap: 0px; }
-    .grid-contacto .h1-contacto {
-      margin-top: 10px; }
-  .contact-txt {
-    margin-right: 30px; }
-  .text-question {
-    margin-top: 0; }
-  .contacto-img {
-    width: 50%;
-    padding-top: 50px; }
-  .grid-nosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 70px 600px 500px;
-    grid-template-areas: "nosotros-title" "nosotros" "img-nosotros";
-    justify-content: center; }
-  .h1-style {
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem; }
-  p {
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.6rem; }
-  .nosotros-div {
-    margin: 10px 20px 0 20px;
-    width: auto;
-    padding: 20px; }
-  .nosotros-img {
-    justify-self: center;
-    padding: 0; }
-  .grid-recommend {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 80px 800px 800px;
-    margin: 0;
-    grid-template-areas: "title" "londres"  "tokyo"; }
-    .grid-recommend .grid-recommend-title {
-      margin-top: 50px; }
-  figure {
-    width: 280px; } }
+    flex-direction: column; } }
 
 @media only screen and (min-width: 577px) and (max-width: 990px) {
   nav li {
@@ -760,215 +709,7 @@ figure.pic11 {
   .covid-title {
     padding-top: 10px; }
   div.cards {
-    margin: 80px 0 80px 150px; }
-  .grid-nosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 100px 500px 600px;
-    grid-template-areas: "nosotros-title" "nosotros" "img-nosotros";
-    justify-content: center; }
-  .nosotros-div {
-    margin: 10px 20px 0 20px;
-    width: auto;
-    padding: 20px; }
-  .nosotros-img {
-    height: 450px;
-    justify-self: center; } }
-
-@media only screen and (min-width: 577px) and (max-width: 1250px) {
-  .grid-recommend {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 100px 800px 800px;
-    margin: 0;
-    grid-template-areas: "title" "londres"  "tokyo"; }
-    .grid-recommend .grid-recommend-title {
-      margin-top: 50px; } }
-
-@media only screen and (min-width: 1691px) {
-  .grid-nosotros {
-    grid-template-rows: 130px 1000px; }
-  .nosotros-div {
-    margin: 150px 0 0 450px;
-    width: 60%; }
-  .nosotros-img {
-    height: 750px;
-    padding-right: 200px; }
-  .grid-recommend {
-    margin: 10px 220px 0 220px; } }
-
-@media only screen and (max-width: 800px) {
-  .grid-contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 100px 500px 900px;
-    grid-template-areas: "contact-title" "contact-txt"  "formulario";
-    row-gap: 30px; }
-    .grid-contacto .h1-contacto {
-      margin-top: 30px; }
-  .contact-txt {
-    margin-right: 30px; }
-  .contacto-img {
-    width: 30%;
-    padding-top: 50px; } }
-
-@media only screen and (max-width: 433px) {
-  .grid-contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 40px 450px 900px;
-    grid-template-areas: "contact-title" "contact-txt"  "formulario";
-    row-gap: 10px; }
-    .grid-contacto .h1-contacto {
-      margin-top: 10px; }
-  .contact-txt {
-    margin-right: 30px; }
-  .text-question {
-    margin-top: 0; }
-  .contacto-img {
-    width: 40%;
-    padding-top: 50px; }
-  form label {
-    padding-left: 50px; } }
-
-@media only screen and (min-width: 1600px) {
-  .grid-city {
-    grid-template-rows: 130px 800px 1250px;
-    margin-left: 200px;
-    margin-right: 200px; }
-  .grid-city .grid-city-video {
-    justify-self: center;
-    width: 650px;
-    height: 400px; } }
-
-@media only screen and (min-width: 836px) and (max-width: 1330px) {
-  .grid-city {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 100px 600px 400px 1800px;
-    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
-  .grid-city-container {
-    margin-right: 40px; }
-  .grid-city .grid-city-video {
-    justify-self: center; } }
-
-@media only screen and (min-width: 560px) and (max-width: 835px) {
-  .grid-city {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 100px 700px 400px 3200px;
-    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
-  .grid-city-container {
-    margin-right: 20px;
-    margin-left: 20px; }
-  .grid-city .grid-city-video {
-    justify-self: center; } }
-
-@media only screen and (min-width: 426px) and (max-width: 559px) {
-  .grid-city {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 100px 700px 500px 3200px;
-    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
-  .grid-city-container {
-    margin-right: 20px;
-    margin-left: 20px; }
-  .grid-city .grid-city-video {
-    justify-self: center;
-    width: 350px;
-    height: 200px; }
-  .container-galeria-img {
-    width: 280px; } }
-
-@media only screen and (max-width: 425px) {
-  .grid-city {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    grid-template-rows: 100px 1150px 350px 3200px;
-    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
-  .grid-city-container {
-    margin-right: 20px;
-    margin-left: 20px; }
-  .grid-city .grid-city-video {
-    justify-self: center;
-    width: 250px;
-    height: 150px; }
-  .container-galeria-img {
-    width: 150px;
-    height: 150px; } }
-
-@media only screen and (min-width: 908px) and (max-width: 1330px) {
-  .flex-servicios .flex-hotel {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center; }
-  .flex-servicios .flex-itinerario {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-right: 0; }
-  .btn-3 {
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.8rem;
-    width: 100%; }
-  .flex-servicios .btn-svc {
-    align-self: center;
-    width: 80%;
-    margin-left: 50px; } }
-
-@media only screen and (max-width: 908px) {
-  .flex-servicios {
-    margin: 0; }
-    .flex-servicios .flex-servicios .flex-hotel {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center; }
-    .flex-servicios .flex-servicios .flex-itinerario {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center; }
-  .flex-servicios .btn-svc {
-    margin-left: 80px;
-    width: 80%; }
-  .btn-3 {
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.6rem;
-    width: 100%; }
-  .flex-servicios .flex-hotel {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center; }
-  .subcontainer-servicios {
-    width: 330px;
-    margin: 0 10px 100px 10px; }
-  .img-svc-style {
-    display: none; } }
-
-@media only screen and (max-width: 850px) {
-  .error-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
-    grid-template-areas: "error-title" "error-img"  "error-txt"; }
-    .error-grid .error-texto {
-      margin-left: 40px; } }
+    margin: 80px 0 80px 150px; } }
 
 @media only screen and (max-width: 991px) {
   .navbar-light .navbar-nav .nav-link {
@@ -1075,6 +816,385 @@ figure.pic11 {
   .carousel-item-texto {
     margin: 0 -70px 700px 0; } }
 
+@media only screen and (min-width: 297px) and (max-width: 332px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 80px; } }
+
+@media only screen and (min-width: 333px) and (max-width: 414px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 120px; } }
+
+@media only screen and (min-width: 415px) and (max-width: 482px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 200px; } }
+
+@media only screen and (min-width: 483px) and (max-width: 564px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 270px; } }
+
+@media only screen and (min-width: 565px) and (max-width: 633px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 350px; } }
+
+@media only screen and (min-width: 634px) and (max-width: 714px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 420px; } }
+
+@media only screen and (min-width: 715px) and (max-width: 783px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 500px; } }
+
+@media only screen and (min-width: 784px) and (max-width: 863px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 570px; } }
+
+@media only screen and (min-width: 864px) and (max-width: 917px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 650px; } }
+
+@media only screen and (min-width: 918px) and (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    margin-left: 700px; } }
+
+@media only screen and (min-width: 434px) and (max-width: 576px) {
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 40px 500px 900px;
+    grid-template-areas: "contact-title" "contact-txt"  "formulario";
+    row-gap: 0px; }
+    .grid-contacto .h1-contacto {
+      margin-top: 10px; }
+  .contact-txt {
+    margin-right: 30px; }
+  .text-question {
+    margin-top: 0; }
+  .contacto-img {
+    width: 50%;
+    margin-top: 50px; }
+  .grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 70px 600px 500px;
+    grid-template-areas: "nosotros-title" "nosotros" "img-nosotros";
+    justify-content: center; }
+  .h1-style {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem; }
+  p {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem; }
+  .nosotros-div {
+    margin: 10px 20px 0 20px;
+    width: auto;
+    padding: 20px; }
+  .nosotros-img {
+    justify-self: center;
+    padding: 0; } }
+
+@media only screen and (min-width: 577px) and (max-width: 990px) {
+  .grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 500px 600px;
+    grid-template-areas: "nosotros-title" "nosotros" "img-nosotros";
+    justify-content: center; }
+  .nosotros-div {
+    margin: 10px 20px 0 20px;
+    width: auto;
+    padding: 20px; }
+  .nosotros-img {
+    height: 450px;
+    justify-self: center; } }
+
+@media only screen and (min-width: 577px) and (max-width: 1250px) {
+  .grid-recommend {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 800px 800px;
+    margin: 0;
+    grid-template-areas: "title" "londres"  "tokyo"; }
+    .grid-recommend .grid-recommend-title {
+      margin-top: 50px; } }
+
+@media only screen and (max-width: 576px) {
+  .grid-recommend {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 80px 800px 800px;
+    margin: 0;
+    grid-template-areas: "title" "londres"  "tokyo"; }
+    .grid-recommend .grid-recommend-title {
+      margin-top: 50px; }
+  .size-responsive {
+    width: 280px;
+    height: 550; } }
+
+@media only screen and (min-width: 1691px) {
+  .grid-nosotros {
+    grid-template-rows: 130px 1000px; }
+  .nosotros-div {
+    margin: 150px 0 0 450px;
+    width: 60%; }
+  .nosotros-img {
+    height: 750px;
+    padding-right: 200px; }
+  .grid-recommend {
+    margin: 10px 220px 0 220px; } }
+
+@media only screen and (min-width: 577px) and (max-width: 800px) {
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 500px 900px;
+    grid-template-areas: "contact-title" "contact-txt"  "formulario";
+    row-gap: 30px; }
+    .grid-contacto .h1-contacto {
+      margin-top: 30px; }
+  .contact-txt {
+    margin-right: 30px; }
+  .contacto-img {
+    width: 30%;
+    margin-top: 50px; } }
+
+@media only screen and (max-width: 433px) {
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 40px 450px 900px;
+    grid-template-areas: "contact-title" "contact-txt"  "formulario";
+    row-gap: 10px; }
+    .grid-contacto .h1-contacto {
+      margin-top: 10px; }
+  .h1-style {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem; }
+  .contact-txt {
+    margin-right: 30px; }
+  .text-question {
+    margin-top: 0; }
+  .contacto-img {
+    width: 40%;
+    margin-top: 50px; }
+  form label {
+    padding-left: 50px; }
+  .grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 70px 600px 500px;
+    grid-template-areas: "nosotros-title" "nosotros" "img-nosotros";
+    justify-content: center; }
+  .h1-style {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem; }
+  p {
+    font-family: "Trirong", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem; }
+  .nosotros-div {
+    margin: 10px 20px 0 20px;
+    width: auto;
+    padding: 20px; }
+  .nosotros-img {
+    justify-self: center;
+    padding: 0; } }
+
+@media only screen and (min-width: 1650px) {
+  .grid-svc {
+    margin: 10px 150px 0 150px; } }
+
+@media only screen and (min-width: 1134px) and (max-width: 1234px) {
+  .grid-svc {
+    margin: 10px 5px 0 5px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1133px) {
+  .grid-svc {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 130px 650px 650px 650px 200px;
+    row-gap: 40px;
+    margin: 10px 5px 0 5px;
+    grid-template-areas: "svc-title" "itinerario"  "hotel" "otros" "btn-svc"; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1133px) {
+  .grid-svc {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 130px 650px 650px 650px 200px;
+    row-gap: 40px;
+    margin: 10px 5px 0 5px;
+    grid-template-areas: "svc-title" "itinerario"  "hotel" "otros" "btn-svc"; } }
+
+@media only screen and (max-width: 599px) {
+  .grid-svc {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 130px 650px 650px 650px 200px;
+    row-gap: 40px;
+    margin: 10px 0 0 0;
+    grid-template-areas: "svc-title" "itinerario"  "hotel" "otros" "btn-svc"; }
+  .card.card-svc {
+    width: 280px;
+    height: 500px;
+    margin: 40px auto 40px auto; }
+  .btn-quiero {
+    margin: 40px auto 40px auto; } }
+
+@media only screen and (max-width: 850px) {
+  .error-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    grid-template-areas: "error-title" "error-img"  "error-txt"; }
+    .error-grid .error-texto {
+      margin-left: 40px; } }
+
+@media only screen and (min-width: 1600px) {
+  .grid-city {
+    grid-template-rows: 130px 800px 1700px;
+    margin-left: 50px; }
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: 650px;
+    height: 400px; } }
+
+@media only screen and (min-width: 1100px) and (max-width: 1282px) {
+  .grid-city {
+    grid-template-rows: 130px 900px 1300px;
+    margin-left: 30px; } }
+
+@media only screen and (min-width: 750px) and (max-width: 1099px) {
+  .grid-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 600px 500px 900px;
+    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
+  .grid-city-container {
+    margin-right: 40px; }
+  .grid-city .grid-city-video {
+    justify-self: center; }
+  .fig-desc {
+    display: none; } }
+
+@media only screen and (min-width: 668px) and (max-width: 749px) {
+  .grid-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 600px 500px 900px;
+    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
+  .grid-city-container {
+    margin-right: 20px;
+    margin-left: 20px; }
+  .grid-city .grid-city-video {
+    justify-self: center; }
+  .fig-desc {
+    display: none; } }
+
+@media only screen and (min-width: 480px) and (max-width: 667px) {
+  .grid-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 800px 500px 900px;
+    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
+  .grid-city-container {
+    margin-right: 20px;
+    margin-left: 20px; }
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: 400px;
+    height: 250px; }
+  .fig-desc {
+    display: none; } }
+
+@media only screen and (min-width: 427px) and (max-width: 479px) {
+  .grid-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 1000px 300px 2800px;
+    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
+  .grid-city-container {
+    margin-right: 10px;
+    margin-left: 20px; }
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: 280px;
+    height: 250px; }
+  .fig-desc {
+    display: none; }
+  .img-custom {
+    width: 80%;
+    height: 50%; } }
+
+@media only screen and (min-width: 385px) and (max-width: 426px) {
+  .grid-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 1000px 300px 2800px;
+    grid-template-areas: "title" "itinerario"  "video" "galeria"; }
+  .grid-city-container {
+    margin-right: 10px;
+    margin-left: 20px; }
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: 280px;
+    height: 250px; }
+  .fig-desc {
+    display: none; }
+  .img-custom {
+    width: 80%;
+    height: 50%; }
+  .container-galeria {
+    margin: 30px 0 100px 15px; } }
+
+@media only screen and (max-width: 384px) {
+  .grid-city {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    grid-template-rows: 100px 1200px 300px 2100px;
+    grid-template-areas: "title" "itinerario"  "video" "galeria";
+    margin-left: 0; }
+  .grid-city-container {
+    margin-right: 5px;
+    margin-left: 10px; }
+  .grid-city .grid-city-video {
+    justify-self: center;
+    width: 250px;
+    height: 250px; }
+  .fig-desc {
+    display: none; }
+  .container-galeria {
+    margin: 30px 0 100px 10px; }
+  .img-custom {
+    width: 70%;
+    height: 50%;
+    margin-left: 0; } }
+
 .cards {
   width: 400px;
   height: 500px;
@@ -1163,7 +1283,8 @@ figure.pic11 {
   align-items: center;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   margin: 120px 30px  40px 30px;
-  background-color: #d1e8e2; }
+  background-color: #d1e8e2;
+  border-radius: 10px; }
   .card-estirada .card-title-custom {
     color: #324b50;
     text-align: left; }
@@ -1286,3 +1407,6 @@ figure {
       border-radius: 5px;
       color: #d1e8e2;
       font-size: 14px; }
+      figure figcaption button:hover {
+        background: #d1e8e2;
+        color: #324b50; }

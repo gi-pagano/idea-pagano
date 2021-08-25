@@ -1,0 +1,313 @@
+@media only screen and (max-width: 576px) {
+//navbar//
+nav li {
+    border-right: none;
+    padding: 0; 
+  } 
+
+  .logo{
+    width: 30vw;
+  }
+
+//footer// 
+
+  .container-foot .container-foot_layout {
+    height: size(15);
+    @include flex-column;
+  }
+
+  .container-foot .container-foot_layout .copyright-layout {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-foot .container-foot_layout .copyright-layout .logo-footer {
+    margin-left: 0;
+    width: size(3);
+  }
+
+  .container-foot .container-foot_layout .slogan {
+    margin-left: 0;
+  }
+
+  .container-foot .container-foot_layout .icons-redes {
+    margin: 0 0 5px 5px;
+    width: size(3);
+  }
+
+//index// 
+  .carousel-item .carousel-item-texto {
+    display: none;
+  }
+
+  h1 strong {
+    background: none;
+    margin-right: 0;
+  }
+
+  .container-summary .container-summary-line {
+    border-bottom: none;
+  }
+
+  .container-summary .container-summary-text {
+    padding: 70px 40px 0 40px;
+  }
+
+  .container-summary .container-summary-img {
+    margin: 60px 0 25px 0;
+  }
+
+  .covid-title {
+    padding: 10px 20px 0 20px;
+  }
+
+  .container-summary .container-summary-text {
+    padding: 50px 10px 0 10px;
+    margin:0;
+  }
+
+  div.cards {
+    width: size(20)
+  }
+
+  div.card {
+    flex-direction: column;
+  }  
+}
+
+@media only screen and (min-width: 577px) and (max-width: 990px) {
+//navbar//
+nav li {
+    border-right: none;
+    padding: 0; 
+  } 
+
+  .logo{
+    width: 20vw;
+  }
+
+//footer// 
+  .container-foot .container-foot_layout {
+    height: size(13);
+    @include flex-column;
+    justify-content: center;
+  }   
+    
+  .container-foot .container-foot_layout .copyright-layout .logo-footer {
+    margin-left: 0;
+  }
+
+  .container-foot .container-foot_layout .slogan {
+    margin-left: 0;
+  }
+
+  .container-foot .container-foot_layout .icons-redes {
+    margin: 10px 0 5px 0;
+  }
+
+//index// 
+  .carousel-item .carousel-item-texto {
+    display: none;
+  }
+
+  h1 strong {
+    margin-left: size(7);
+  }
+
+  .container-summary .container-summary-text {
+    padding: 70px 40px 0 40px;
+    margin:0;
+  }
+
+  .container-summary .container-summary-img {
+    margin: 60px 0 25px 0;
+  }
+
+  .covid-title {
+    padding-top: 10px;
+  }
+  
+  div.cards {
+    margin: 80px 0 80px 150px;
+  }
+}
+
+//menu hamburguesa//
+@media only screen and (max-width: 991px) {
+    .navbar-light .navbar-nav .nav-link {
+      text-align: right;
+    }
+  
+    li .active-page {
+      border-bottom: none;
+          transform: none;
+      }
+  }  
+  
+  //carrusel texto y cards//
+  @media only screen and (max-width: 309px) {
+    h4 {
+      @include fuente('norm', '700', 'sm');
+      margin: 0 0 70px 70px;
+    }  
+  
+    div.cards {
+      margin: 80px 0 80px 50px;
+    }  
+  }  
+  
+  @media only screen and (min-width: 310px) and (max-width: 403px) {
+    h4 {
+      @include fuente('norm', '700', 'sm');
+      margin: 0 0 90px 80px;
+    } 
+  
+    div.cards {
+      margin: 80px 0 80px 70px;
+    }  
+  }
+  
+  @media only screen and (min-width: 404px) and (max-width: 515px) {
+    h4 {
+      @include fuente('norm', '700', 'md');
+      margin: 0 0 129px 90px;
+    }  
+  
+    div.cards {
+      margin: 80px 0 80px 130px;
+    }  
+  }
+  
+  @media only screen and (min-width: 516px) and (max-width: 653px) {
+    h4 {
+      @include fuente('norm', '700', 'md');
+      margin: 0 0 170px 90px;  
+    } 
+  }  
+  
+  @media only screen and (min-width: 654px) and (max-width: 857px) {
+    h4 {
+      @include fuente('norm', '700', 'md');
+      margin: 0 0 245px 150px;  
+    }
+}   
+  
+  @media only screen and (min-width: 858px) and (max-width: 995px) {
+    h4 {
+      @include fuente('norm', '700', 'md');
+      margin: 0 0 320px 150px;  
+    } 
+  
+    .carousel-item .carousel-item-texto {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 996px) and (max-width: 1239px) {
+    .logo{
+      width: 15vw;
+    }
+  
+    h4 {
+      @include fuente('norm', '700', 'lg');
+      margin: 0 0 380px 210px;  
+    } 
+  
+    .carousel-item .carousel-item-texto {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 1403px) and (max-width: 1607px) {
+    h4 {
+      @include fuente('norm', '700', 'xl');
+      margin: 0 0 0 280px;  
+    } 
+  
+    .carousel-item-texto {
+          margin: 0 0 520px 0;
+      }
+  } 
+  
+  @media only screen and (min-width: 1608px) and (max-width: 1872px) {
+    h4 {
+      @include fuente('norm', '700', 'xl');
+      margin: 0 0 0 280px;  
+    } 
+  
+    .carousel-item-texto {
+          margin: 0 0 620px 0;
+      }
+  }  
+  
+  @media only screen and (min-width: 1873px) {
+    h4 {
+      @include fuente('norm', '700', 'xl');
+      margin: 0 0 0 400px;  
+    } 
+  
+    .carousel-item-texto {
+          margin: 0 -70px 700px 0;
+      }
+  }  
+
+//items dropdown//
+@media only screen and (min-width: 297px) and (max-width: 332px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(8);
+    }
+}
+
+@media only screen and (min-width: 333px) and (max-width: 414px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(12);
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 482px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(20);
+    }
+}
+
+@media only screen and (min-width: 483px) and (max-width: 564px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(27);
+    }
+}
+
+@media only screen and (min-width: 565px) and (max-width: 633px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(35);
+    }
+} 
+
+@media only screen and (min-width: 634px) and (max-width: 714px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(42);
+    }
+} 
+
+@media only screen and (min-width: 715px) and (max-width: 783px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(50);
+    }
+} 
+
+@media only screen and (min-width: 784px) and (max-width: 863px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(57);
+    }
+}  
+
+@media only screen and (min-width: 864px) and (max-width: 917px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(65);
+    }
+}  
+
+@media only screen and (min-width: 918px) and (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        margin-left: size(70);
+    }
+}          

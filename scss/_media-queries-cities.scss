@@ -1,0 +1,197 @@
+//Londres y Tokyo//
+@media only screen and (min-width: 1600px) {
+    .grid-city {
+      grid-template-rows: 130px 800px 1700px;
+      margin-left: 50px;
+    }  
+  
+    .grid-city .grid-city-video {
+      justify-self: center;
+      width: size(65);
+      height: size(40);
+    }
+  }  
+  
+@media only screen and (min-width: 1100px) and (max-width: 1282px) {
+    .grid-city {
+        grid-template-rows: 130px 900px 1300px;
+        margin-left: 30px;
+      }  
+    }   
+
+@media only screen and (min-width: 750px) and (max-width: 1099px) {
+    .grid-city {
+      @include grid-row;
+      grid-template-rows: 100px 600px 500px 900px;
+      grid-template-areas: "title"
+                           "itinerario" 
+                           "video"
+                           "galeria";
+    }
+  
+    .grid-city-container {
+      margin-right: size(4);
+    }
+  
+    .grid-city .grid-city-video {
+      justify-self: center;
+    }
+
+    .fig-desc {
+            display: none;
+        }
+}  
+  
+  @media only screen and (min-width: 668px) and (max-width: 749px) {
+    .grid-city {
+        @include grid-row;
+        grid-template-rows: 100px 600px 500px 900px;
+        grid-template-areas: "title"
+                             "itinerario" 
+                             "video"
+                             "galeria";
+      }
+    
+    .grid-city-container {
+      margin-right: 20px;
+      margin-left: 20px;
+    }  
+  
+    .grid-city .grid-city-video {
+      justify-self: center;
+    }
+
+    .fig-desc {
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 667px) {
+
+    .grid-city {
+        @include grid-row;
+        grid-template-rows: 100px 800px 500px 900px;
+        grid-template-areas: "title"
+                             "itinerario" 
+                             "video"
+                             "galeria";
+      }
+    
+    .grid-city-container {
+      margin-right: 20px;
+      margin-left: 20px;
+    }  
+  
+    .grid-city .grid-city-video {
+      justify-self: center;
+      width: size(40);
+      height: size(25);
+    }
+
+    .fig-desc {
+        display: none;
+    }
+}
+
+  @media only screen and (min-width: 427px) and (max-width: 479px) {
+    .grid-city {
+        @include grid-row;
+        grid-template-rows: 100px 1000px 300px 2800px;
+        grid-template-areas: "title"
+                             "itinerario" 
+                             "video"
+                             "galeria";
+      }
+    
+    .grid-city-container {
+      margin-right: 10px;
+      margin-left: 20px;
+    }  
+  
+    .grid-city .grid-city-video {
+      justify-self: center;
+      width: size(28);
+      height: size(25);
+    }
+
+    .fig-desc {
+        display: none;
+    }
+
+    .img-custom {
+        width: 80%;
+        height: 50%;
+    }
+  } 
+  
+  @media only screen and (min-width: 385px) and (max-width: 426px) {
+    .grid-city {
+        @include grid-row;
+        grid-template-rows: 100px 1000px 300px 2800px;
+        grid-template-areas: "title"
+                             "itinerario" 
+                             "video"
+                             "galeria";
+      }
+    
+    .grid-city-container {
+      margin-right: 10px;
+      margin-left: 20px;
+    }  
+  
+    .grid-city .grid-city-video {
+      justify-self: center;
+      width: size(28);
+      height: size(25);
+    }
+
+    .fig-desc {
+        display: none;
+    }
+
+    .img-custom {
+        width: 80%;
+        height: 50%;
+    }
+
+    .container-galeria {
+        margin: 30px 0 100px 15px;
+    }
+  } 
+  
+  @media only screen and (max-width: 384px) {
+    .grid-city {
+        @include grid-row;
+        grid-template-rows: 100px 1200px 300px 2100px;
+        grid-template-areas: "title"
+                             "itinerario" 
+                             "video"
+                             "galeria";
+        margin-left: 0;                     
+      }
+    
+    .grid-city-container {
+      margin-right: 5px;
+      margin-left: 10px;
+    }  
+  
+    .grid-city .grid-city-video {
+      justify-self: center;
+      width: size(25);
+      height: size(25);
+    }
+
+    .fig-desc {
+        display: none;
+    }
+
+    .container-galeria {
+        margin: 30px 0 100px 10px;
+    }
+
+    .img-custom {
+        width: 70%;
+        height: 50%;
+        margin-left: 0;
+    }
+  } 
