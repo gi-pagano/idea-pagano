@@ -94,9 +94,13 @@
 //fin mixins//
 
 
-//Bucles margenes en rem usados en "gracias.html"//
+//Bucles margenes en rem//
 @for $i from 1 through 2{
     .margin-gracias-#{$i}{margin-top: 13rem * $i;}
+}
+
+@for $i from 1 through 2{
+    .margin-bottom-#{$i}{margin-bottom: 10rem * $i;}
 }
 
 @for $i from 1 through 4{

@@ -16,6 +16,7 @@
 	.navbar-nav {
 		.nav-link {
 			color: $light-ocean;
+			text-shadow: 0px 7px 10px rgba(black, 0.5);
 			&:hover {
 				color: $light-ocean;
 		    }

@@ -4,6 +4,12 @@
 .margin-gracias-2 {
   margin-top: 26rem; }
 
+.margin-bottom-1 {
+  margin-bottom: 10rem; }
+
+.margin-bottom-2 {
+  margin-bottom: 20rem; }
+
 .padding-gracias-1 {
   padding: 4rem; }
 
@@ -62,7 +68,8 @@ body {
   margin-left: 4%; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #d1e8e2; }
+  color: #d1e8e2;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
   .navbar-light .navbar-nav .nav-link:hover {
     color: #d1e8e2; }
 
@@ -102,11 +109,15 @@ ul ul li {
   font-size: 2rem;
   text-align: center;
   margin: 0 100px 450px 100px;
-  padding-top: 0; }
+  padding-top: 0;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 60px;
   height: 60px; }
+
+.carrusel-shadow {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
 
 h1 {
   text-align: center;
@@ -114,7 +125,8 @@ h1 {
   font-family: "Trirong", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 3rem; }
+  font-size: 3rem;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
 
 .h1-style {
   font-family: "Trirong", serif;
@@ -152,7 +164,8 @@ h4 {
   font-size: 6rem;
   padding: 8px;
   width: 45%;
-  margin-left: 260px; }
+  margin-left: 260px;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
 
 h5 {
   font-family: "Trirong", serif;
@@ -224,7 +237,8 @@ a {
   border-radius: 10px;
   justify-self: center;
   padding: 10px;
-  margin: 50px 0 50px 0; }
+  margin: 50px 0 50px 0;
+  box-shadow: 0px 7px 10px rgba(209, 232, 226, 0.5); }
 
 .contact-txt {
   display: flex;
@@ -302,7 +316,8 @@ form {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-top: 30px; }
+  margin: 30px auto 180px 40px;
+  width: 90%; }
 
 .container-foot {
   display: flex;
@@ -376,7 +391,7 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
-  grid-template-rows: 130px 700px 1330px;
+  grid-template-rows: 130px 700px 1500px;
   grid-template-areas: "title title" "itinerario video" "galeria galeria";
   column-gap: 40px; }
   .grid-city .grid-city-title {
@@ -464,33 +479,73 @@ form {
 
 .contacto-img {
   width: 50%;
-  padding-top: 220px;
+  margin-top: 30%;
   align-self: center;
-  border-radius: 50px; }
+  border-radius: 50px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
 
 /*css galeria*/
-.container-galeria-div {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px; }
-  .container-galeria-div:hover {
-    transform: scale(1.1); }
-  .container-galeria-div .container-galeria-img {
-    width: 400px;
-    height: 200px;
-    border-radius: 10px; }
-  .container-galeria-div .container-galeria-desc {
-    padding: 15px;
-    text-align: center;
-    font-family: "Trirong", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.8rem;
-    color: #d1e8e2; }
-  .container-galeria-div .img-divider {
-    width: 100%;
-    height: 70%;
-    border-radius: 10px; }
+.img-custom {
+  width: 30%;
+  height: 50%;
+  position: relative;
+  background-color: #f5fafa;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 2px 3px black; }
+  .img-custom:hover {
+    box-shadow: 5px 10px 100px black;
+    transform: scale(1.1, 1.1);
+    z-index: 20; }
+
+.fig-desc {
+  font-family: 'Cedarville Cursive', cursive; }
+
+figure.pic1 {
+  transform: rotate(-10deg);
+  z-index: 1; }
+
+figure.pic2 {
+  transform: rotate(15deg);
+  z-index: 2; }
+
+figure.pic3 {
+  transform: rotate(-25deg);
+  z-index: 1; }
+
+figure.pic4 {
+  transform: rotate(5deg);
+  z-index: 1; }
+
+figure.pic5 {
+  transform: rotate(5deg);
+  z-index: 1; }
+
+figure.pic6 {
+  transform: rotate(-8deg);
+  z-index: 1; }
+
+figure.pic7 {
+  transform: rotate(2deg);
+  z-index: 1; }
+
+figure.pic8 {
+  transform: rotate(-13deg);
+  z-index: 1; }
+
+figure.pic9 {
+  transform: rotate(-7deg);
+  z-index: 1; }
+
+figure.pic10 {
+  transform: rotate(2deg);
+  z-index: 1; }
+
+figure.pic11 {
+  transform: rotate(-3deg);
+  z-index: 1; }
 
 .london-img {
   grid-area: londres; }
@@ -1037,6 +1092,8 @@ form {
     .cards:hover .info {
       opacity: 1;
       transform: translateY(0px); }
+    .cards:hover h3 {
+      display: none; }
   .cards:before {
     content: "";
     position: absolute;
@@ -1087,10 +1144,25 @@ form {
         background: #324b50;
         color: #d1e8e2; }
 
+.top {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  font-weight: 800; }
+
+.bottom {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  border-color: #0a1f1d;
+  color: #0a1f1d;
+  font-weight: 800; }
+
 .card-estirada {
   flex-direction: row;
   align-items: center;
-  margin: 120px 0  140px 0;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  margin: 120px 30px  40px 30px;
   background-color: #d1e8e2; }
   .card-estirada .card-title-custom {
     color: #324b50;
@@ -1162,7 +1234,7 @@ figure {
   width: 550px;
   height: 620px;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 7px 10px 7px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden; }
   figure:hover {
@@ -1200,7 +1272,7 @@ figure {
       margin: 0 0 20px;
       padding: 0; }
     figure figcaption p {
-      font-size: 14px;
+      font-size: 1.4rem;
       line-height: 1.75; }
     figure figcaption button {
       position: relative;

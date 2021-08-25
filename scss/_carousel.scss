@@ -4,6 +4,7 @@
 		text-align: center;
 		margin: 0 100px 450px 100px;
 		padding-top: 0;
+		text-shadow: 0px 7px 10px rgba(black, 0.5);
 	}
 
 .carousel-control-next-icon {
@@ -12,4 +13,8 @@
 }
 .carousel-control-prev-icon {
 	@extend .carousel-control-next-icon;
+}
+
+.carrusel-shadow {
+	box-shadow: 0px 7px 10px rgba(black, 0.5);
 }
