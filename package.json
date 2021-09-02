@@ -1,7 +1,7 @@
 {
-  "name": "g",
+  "name": "idea-pagano",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta es la web de una empresa dedicada a armar itinerarios de viaje.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
