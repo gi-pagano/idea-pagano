@@ -17,6 +17,7 @@
 
 .text-question {
 	border-radius: size(0.5);
+	text-align: center;
 	padding: size(1.5);
 	margin-top: size(5);
 	box-shadow: 0 0 10px 0 $light-pink inset, 0 0 10px 4px $light-pink;
@@ -78,9 +79,30 @@ form {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	margin: 30px auto 180px 40px;
+	margin: 30px auto 0 40px;
 	width: 90%;
   }
 
+//nosotros div staff//
+.staff {
+	@include flex-row;
+	background-color: $dark-ocean;
+	box-shadow: 0 40px 60px -6px black;
+	border-radius: size(3);
+	margin-bottom: size(4);
+	.staff-img { 
+		width: percentage(2.5);
+		border-radius: size(70);
+		padding: size(2);
+	}
+	p {
+		text-align: center;
+		padding: size(5);
+		align-self: center;
+	}
+	span {
+		font-weight: 700;
+	}
+}  
                  
    

@@ -9,32 +9,6 @@ nav li {
     width: 30vw;
   }
 
-//footer// 
-
-  .container-foot .container-foot_layout {
-    height: size(15);
-    @include flex-column;
-  }
-
-  .container-foot .container-foot_layout .copyright-layout {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .container-foot .container-foot_layout .copyright-layout .logo-footer {
-    margin-left: 0;
-    width: size(3);
-  }
-
-  .container-foot .container-foot_layout .slogan {
-    margin-left: 0;
-  }
-
-  .container-foot .container-foot_layout .icons-redes {
-    margin: 0 0 5px 5px;
-    width: size(3);
-  }
-
 //index// 
   .carousel-item .carousel-item-texto {
     display: none;
@@ -66,8 +40,8 @@ nav li {
     margin:0;
   }
 
-  div.cards {
-    width: size(20)
+  .aside-sty {
+    border-radius: 0;
   }
 
   div.card {
@@ -86,25 +60,7 @@ nav li {
     width: 20vw;
   }
 
-//footer// 
-  .container-foot .container-foot_layout {
-    height: size(13);
-    @include flex-column;
-    justify-content: center;
-  }   
-    
-  .container-foot .container-foot_layout .copyright-layout .logo-footer {
-    margin-left: 0;
-  }
-
-  .container-foot .container-foot_layout .slogan {
-    margin-left: 0;
-  }
-
-  .container-foot .container-foot_layout .icons-redes {
-    margin: 10px 0 5px 0;
-  }
-
+ 
 //index// 
   .carousel-item .carousel-item-texto {
     display: none;
@@ -128,9 +84,45 @@ nav li {
   }
   
   div.cards {
-    margin: 80px 0 80px 150px;
+    margin: 80px auto 80px 40px;
   }
 }
+
+//footer y cards// 
+@media only screen and (max-width: 767px) { 
+
+  .container-foot .container-foot_layout {
+    height: size(60);
+    @include flex-column;
+    justify-content: center;
+    .footer-items-layout  {
+      width: percentage(9);
+      .logo-footer {
+        margin-left: 40%;
+        width: 20%;
+        padding-left: 0;
+        margin-top: 10px;
+      }
+      .mail-layout {
+        align-self: center;
+      }
+      .footer-links {
+        margin-left: percentage(1);
+      }  
+    }
+  }
+
+  .container-summary .container-summary-img {
+    width: percentage(2);
+  }
+
+  div.cards .bottom {
+    color: $light-ocean;
+    border-color: $light-ocean;
+  }  
+
+  
+}  
 
 //menu hamburguesa//
 @media only screen and (max-width: 991px) {
@@ -144,15 +136,28 @@ nav li {
       }
   }  
   
-  //carrusel texto y cards//
-  @media only screen and (max-width: 309px) {
+//carrusel texto y cards//
+@media only screen and (max-width: 309px) {
     h4 {
       @include fuente('norm', '700', 'sm');
       margin: 0 0 70px 70px;
     }  
   
     div.cards {
-      margin: 80px 0 80px 50px;
+      margin: 50px 0 50px 15px;
+    }  
+
+    .card-estirada .card-title-custom {
+      font-size: large;
+    }
+
+    .container-foot .container-foot_layout .footer-items-layout .logo-footer {
+      margin-left: 35%;
+      width: 30%;
+    }  
+
+    .container-foot .container-foot_layout .footer-items-layout .mail-layout img {
+      width: 25px;
     }  
   }  
   
@@ -163,7 +168,16 @@ nav li {
     } 
   
     div.cards {
-      margin: 80px 0 80px 70px;
+      margin: 50px 0 50px 15px;
+    }  
+
+    .container-foot .container-foot_layout .footer-items-layout .logo-footer {
+      margin-left: 35%;
+      width: 30%;
+    }  
+
+    .container-foot .container-foot_layout .footer-items-layout .mail-layout img {
+      width: 30px;
     }  
   }
   
@@ -171,10 +185,6 @@ nav li {
     h4 {
       @include fuente('norm', '700', 'md');
       margin: 0 0 129px 90px;
-    }  
-  
-    div.cards {
-      margin: 80px 0 80px 130px;
     }  
   }
   
@@ -250,6 +260,7 @@ nav li {
           margin: 0 -70px 700px 0;
       }
   }  
+
 
 //items dropdown//
 @media only screen and (min-width: 297px) and (max-width: 332px) {

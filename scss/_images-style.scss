@@ -1,8 +1,9 @@
 //quienes somos//
 .nosotros-img {
     grid-area: img-nosotros;
+    box-shadow: 0 40px 60px black;
+    border-radius: size(3);
     width: percentage(9);
-    padding-right: size(2);
     height: percentage(7);
     animation-name: bounceInLeft;
     animation-duration: 1s;
@@ -10,8 +11,8 @@
 
 //contacto//
 .contacto-img {
-    width: percentage(5);
-    margin-top: percentage(3);
+    width: percentage(7);
+    margin-top: percentage(2);
     align-self: center;
     border-radius: size(5);
     box-shadow: 0px 7px 10px rgba(black, 0.5);

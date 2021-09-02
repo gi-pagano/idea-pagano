@@ -1,7 +1,7 @@
 //quienes somos//
 .grid-nosotros {
     @include grid-column;
-    grid-template-rows: 130px 800px;
+    grid-template-rows: 130px 700px;
     grid-template-areas: "nosotros-title nosotros-title" 
                          "nosotros img-nosotros";
     .nos-title {
@@ -27,7 +27,7 @@
 //londres y tokio// 
 .grid-city {
     @include grid-column;
-    grid-template-rows: 130px 700px 1500px;
+    grid-template-rows: 130px 700px 1300px;
     grid-template-areas: "title title"
                          "itinerario video"
                          "galeria galeria";
@@ -73,7 +73,7 @@
   justify-items: center;
   grid-template-areas: "svc-title svc-title"
                        "itinerario hotel"
-                       "otros otros"
+                       "idiomas otros"
                        "btn-svc btn-svc";
   .svc-title {
     grid-area: svc-title;
@@ -84,6 +84,9 @@
   }
   .hotel-card {
     grid-area: hotel;
+  }
+  .idomas-card {
+    grid-area: idiomas;
   }
   .otros-card {
     grid-area: otros;

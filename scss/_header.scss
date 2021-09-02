@@ -1,3 +1,7 @@
+nav{
+	box-shadow: 0 0 30px 0 $light-ocean;
+}
+
 .nav-color {
 	background-image: linear-gradient(to bottom, $ocean-green, $dark-ocean);
 	border-bottom: solid 1px $light-ocean;
@@ -33,12 +37,11 @@ li {
 		}
 	    a {
 		&:hover {
-			border-bottom: solid 4px $light-ocean;
+			border-bottom: solid 3px $light-ocean;
 		}
 	}
 	.active-page {
 		border-bottom: 1.4px solid $light-pink;
-		transform: scale(1.1);
 		font-style: italic;
 	}
 }
@@ -62,5 +65,17 @@ ul {
 	background-color: transparent;
 }
 
+.nav-item {
+	transition: opacity .25s ease-in-out;
+  }
+  
+  .navbar-nav:hover .nav-item {
+	opacity: 0.35;
+	&:hover {
+		opacity: 1;
+	}
+  }
+  
+ 
 
 

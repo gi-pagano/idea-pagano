@@ -10,41 +10,96 @@
         @include flex-row;
         align-items: center;
         justify-content: space-between;
-        height: size(7);
         background-color: $light-pink;
 
-        .copyright-layout{
-            @include flex-row;
+        .footer-items-layout{
+            @include flex-column;
+            align-content: space-evenly;
+            width: percentage(3.3);
             .logo-footer{
-                width: size(4);
-                margin: 8px 0 0 50px;
+                width: percentage(3);
+                padding-left: size(1.5);
             }
 
             .copyright {
                 color: $dark-ocean;
-                @include fuente('norm', '700', 'xxs');
-                padding-left: size(2); 
-                margin-top: -5px;
+                @include fuente('norm', 'no', 'xxs'); 
+                align-self: center;
             }
 
-            .brand{
+            .footer-links {
+                margin-left: size(1.5);
+                a{
+                    display:inline-block;
+                    @include fuente('norm', '500', 'xxs');
+                    border-right: 1px solid $dark-ocean;
+                    padding: 0 10px 0 5px;
+                    color: $dark-ocean;
+                    &:last-child {
+                        border: none;
+                    }
+                    &:hover {
+                        opacity: 0.7; 
+                    }
+                }
+            }
+
+            .slogan {
                 color: $dark-ocean;
-                @include fuente('norm', '500', 'xxs');
-                padding-left: size(1);
-                margin-top: -5px;
+                align-self: center;
+                @include fuente('ita', '700', 'xs');
+                margin-top: size(2);
+                text-shadow: 0px 7px 10px rgba(black, 0.5);
+            } 
+            
+            .mail-layout {
+                display: inline-block;
+                @include fuente('ita', '700', 'xxs');
+	            vertical-align: middle;
+                padding-left: size(1.5);
+                a {
+                    color: $dark-ocean;
+                    padding-left: size(0);
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+                img {
+                    width: size(5);
+                }
             }
-        }
+            
+            .suscribe {
+                    padding: size(2);
+                    input[type=text], input[type=submit] {
+                        width: 100%;
+                        padding: size(1.2);
+                        margin: 8px 0;
+                        @include fuente('norm', '500', 'xxs');
+                        border: 2px solid $pinky; 
+                      }
+                    input[type=submit] {
+                        background-color: $ocean-green;
+                        color: $light-pink;
+                        border: none;
+                        &:hover {
+                            opacity: 0.7;
+                        }  
+                    } 
+            }
 
-        .slogan {
-            color: $dark-ocean;
-            @include fuente('ita', '700', 'xxs');
-            margin: -20px 0 0 -200px
-        }  
-
-        .icons-redes {
-            width: size(6); 
-            margin-right: size(3);  
-        }
+            .icons-redes {
+                display: inline-block;
+                align-self: center;
+                padding-bottom: size(1);
+                img {
+                width: size(6);
+                &:hover {
+                    opacity: 0.7;   
+                    }
+                }    
+            }  
+        }   
     }
 }
 

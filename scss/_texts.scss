@@ -22,7 +22,6 @@ h2 {
   }
 
 h3 {
-    margin-left: size(2);
     @include fuente('norm', '500', 'sm');
     color: $light-ocean;
     border-bottom: double $light-ocean;
@@ -93,6 +92,10 @@ p {
     grid-area: nosotros;
     @include flex-column;
     justify-content: center;
+    box-shadow: 0 40px 60px -6px black;
+    border-radius: size(9);
+    text-align: center;
+    z-index: 2;
     width: 100%;
     background-color: $dark-ocean;
     margin: 60px auto auto 80px;

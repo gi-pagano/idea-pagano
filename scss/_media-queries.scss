@@ -13,7 +13,7 @@
     } 
 
     .contact-txt {
-      margin-right: size(3);
+      margin: 50px 20px auto 20px;
     } 
 
     .text-question {
@@ -29,7 +29,7 @@
 //nosotros//
     .grid-nosotros {
       @include grid-row;
-      grid-template-rows: 70px 600px 500px;
+      grid-template-rows: 70px 550px 500px;
       grid-template-areas:  "nosotros-title"
                             "nosotros"
                             "img-nosotros";
@@ -45,7 +45,7 @@
     }
 
     .nosotros-div {
-      margin: 10px 20px 0 20px;
+      margin: 10px 30px 0 30px;
       width: auto;
       padding: size(2);
     }
@@ -54,13 +54,26 @@
       justify-self: center;
       padding:0; 
     }
+
+    .staff {
+      @include flex-column;
+      width: percentage(9);
+      margin-left: percentage(0.5);
+      .staff-img {
+        align-self: center;
+        width: percentage(4);
+      }
+      .staff p {
+        padding: size(1);
+      }  
+    }  
 }                       
 
 @media only screen and (min-width: 577px) and (max-width: 990px) {
-//nosotros, hay otro querie para pantallas grandes más abajo//
+//nosotros, hay otro querie para pantallas grandes y más chicas más abajo//
     .grid-nosotros {
       @include grid-row;
-      grid-template-rows: 100px 500px 600px;
+      grid-template-rows: 100px 450px 600px;
       grid-template-areas:  "nosotros-title"
                             "nosotros"
                             "img-nosotros";
@@ -68,7 +81,7 @@
     }
     
     .nosotros-div {
-      margin: 10px 20px 0 20px;
+      margin: 10px 50px 0 50px;
       width: auto;
       padding: size(2);
     }
@@ -77,6 +90,17 @@
       height: size(45);
       justify-self: center;
     }
+
+    .staff {
+      @include flex-column;
+      .staff-img {
+        align-self: center;
+      }
+      .staff p {
+        padding: size(3);
+        width: percentage(4);
+      }  
+    }  
 }    
 
 //recomendados//
@@ -113,7 +137,7 @@
   }
 }    
 
-//nosotros y recomendados pantallas grandes//
+//nosotros, recomendados y contacto pantallas grandes//
 @media only screen and (min-width: 1691px) {
 //nosotros//  
   .grid-nosotros {
@@ -121,21 +145,29 @@
   }  
 
   .nosotros-div {
-    margin: 150px 0 0 450px;
-    width: 60%;
+    margin: 150px 0 0 330px;
+    width: 70%;
   }
 
   .nosotros-img {
     height: size(75);
-    padding-right: size(20);
+    width: percentage(7.5);
   }
 
 //recomendados//
   .grid-recommend {
     margin: 10px 220px 0 220px;  
   }
+} 
+
+@media only screen and (min-width: 1374px) {
+//contacto//
+  .contacto-img {
+    width: percentage(6);
+    margin-top: size(4);
+  }
 }  
- 
+  
 //contacto y nosotros//
 @media only screen and (min-width: 577px) and (max-width: 800px) {
 
@@ -152,11 +184,11 @@
   } 
 
   .contact-txt {
-    margin-right: size(3);
+    margin: 20px 30px auto 30px;
   } 
 
   .contacto-img {
-    width: 30%;
+    width: percentage(4);
     margin-top: size(5);
   }
 } 
@@ -179,7 +211,7 @@
     } 
 
   .contact-txt {
-    margin-right: size(3);
+    margin: 20px 20px auto 20px;
   } 
 
   .text-question {
@@ -187,7 +219,7 @@
   }
 
   .contacto-img {
-    width: 40%;
+    width: percentage(6);
     margin-top: size(5);
   }
 
@@ -195,6 +227,7 @@
     padding-left: 50px;
   }
 
+  //nosotros//
   .grid-nosotros {
     @include grid-row;
     grid-template-rows: 70px 600px 500px;
@@ -222,6 +255,19 @@
     justify-self: center;
     padding:0; 
   }
+
+  .staff {
+    @include flex-column;
+    width: percentage(9);
+    margin-left: percentage(0.5);
+    .staff-img {
+      align-self: center;
+      width: percentage(4);
+    }
+    .staff p {
+      padding: size(1);
+    }  
+  }  
 }               
 
 //servicios//
@@ -240,26 +286,13 @@
 @media only screen and (min-width: 600px)and (max-width: 1133px) {
   .grid-svc {
   @include grid-row;
-  grid-template-rows: 130px 650px 650px 650px 200px;
+  grid-template-rows: 130px 650px 650px 650px 650px 200px;
   row-gap: size(4);
   margin: 10px 5px 0 5px;
   grid-template-areas: "svc-title"
                        "itinerario" 
                        "hotel"
-                       "otros"
-                       "btn-svc";
-  }
-}
-
-@media only screen and (min-width: 600px)and (max-width: 1133px) {
-  .grid-svc {
-  @include grid-row;
-  grid-template-rows: 130px 650px 650px 650px 200px;
-  row-gap: size(4);
-  margin: 10px 5px 0 5px;
-  grid-template-areas: "svc-title"
-                       "itinerario" 
-                       "hotel"
+                       "idomas"
                        "otros"
                        "btn-svc";
   }
@@ -268,12 +301,13 @@
 @media only screen and (max-width: 599px) {
   .grid-svc {
   @include grid-row;
-  grid-template-rows: 130px 650px 650px 650px 200px;
+  grid-template-rows: 130px 650px 650px 650px 650px 200px;
   row-gap: size(4);
   margin: 10px 0 0 0;
   grid-template-areas: "svc-title"
                        "itinerario" 
                        "hotel"
+                       "idiomas"
                        "otros"
                        "btn-svc";
   }

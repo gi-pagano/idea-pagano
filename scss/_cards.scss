@@ -1,10 +1,10 @@
 //index//
 //tarjetas de secciones//
 .cards {
-	width: size(40);
+	width: percentage(9);
 	height: size(50);
 	border-radius: size(1.5);
-    margin: 80px auto 80px 30px;
+    margin: 80px auto 80px 25px;
 	padding: 1.5rem;
 	position: relative;
 	display: flex;
@@ -50,6 +50,7 @@
 		position: relative;
 		z-index: 3;
 		color: $light-ocean;
+		text-align: center;
 		opacity: 0;
 		transform: translateY(30px);
 		transition: 0.5s;
@@ -59,6 +60,7 @@
 		p {
 			letter-spacing: 1px;
 			margin-top: 8px;
+			text-align: center;
         }    
 		.btn-cards {
 			padding: 0.6rem;
@@ -98,13 +100,14 @@
 .card-estirada {
     flex-direction: row;
     align-items: center;
+	text-align: center;
 	box-shadow: 0px 7px 10px rgba(black, 0.5);
     margin: 120px 30px  40px 30px;
     background-color: $light-ocean;
 	border-radius: size(1);
   .card-title-custom {
     color: $dark-ocean;
-    text-align: left;
+    text-align: center;
   }
   .card-text-custom {
     color: $dark-ocean;
@@ -161,6 +164,7 @@
     display: block;
     color: $dark-ocean;
     position: absolute;
+	text-align: center;
     height: 0;
     top: 0;
     opacity: 0;
