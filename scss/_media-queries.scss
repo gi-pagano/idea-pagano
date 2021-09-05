@@ -2,7 +2,7 @@
 //contacto (hay una querie de contacto para min:800px más abajo// 
     .grid-contacto {
       @include grid-row;
-      grid-template-rows: 40px 500px 900px;
+      grid-template-rows: 40px 200px 900px;
       grid-template-areas: "contact-title"
                           "contact-txt" 
                           "formulario";
@@ -21,8 +21,7 @@
     }
 
     .contacto-img {
-      width: 50%;
-      margin-top: size(5);
+      display: none;
     }
 //fin contacto// 
 
@@ -173,13 +172,13 @@
 
   .grid-contacto {
     @include grid-row;
-    grid-template-rows: 100px 500px 900px;
+    grid-template-rows: 50px 200px 900px;
     grid-template-areas: "contact-title"
                          "contact-txt" 
                          "formulario";
     row-gap: size(3);  
     .h1-contacto {
-      margin-top: size(3);
+      margin-top: size(2);
     }                     
   } 
 
@@ -188,15 +187,14 @@
   } 
 
   .contacto-img {
-    width: percentage(4);
-    margin-top: size(5);
+    display: none;
   }
 } 
 
 @media only screen and (max-width: 433px) {
   .grid-contacto {
     @include grid-row;
-    grid-template-rows: 40px 450px 900px;
+    grid-template-rows: 40px 200px 900px;
     grid-template-areas: "contact-title"
                          "contact-txt" 
                          "formulario";
@@ -219,8 +217,7 @@
   }
 
   .contacto-img {
-    width: percentage(6);
-    margin-top: size(5);
+    display: none;
   }
 
   form label {
@@ -298,10 +295,32 @@
   }
 }
 
+.btn-quiero {
+  margin: 40px auto 40px auto;
+}
+
+@media only screen and (min-width: 600px)and (max-width: 1024px) {
+   
+  .card.card-svc {
+    width: size(55);
+    height: size(35);
+    margin: 40px auto 40px auto;
+    &:hover {
+      height: 50%;
+    }
+    .card-desc {
+      opacity: 1;
+      height: auto;
+      top: 350px;
+      overflow-y: hidden; 
+    }
+  }
+}
+
 @media only screen and (max-width: 599px) {
   .grid-svc {
   @include grid-row;
-  grid-template-rows: 130px 650px 650px 650px 650px 200px;
+  grid-template-rows: 45px 670px 500px 570px 630px 200px;
   row-gap: size(4);
   margin: 10px 0 0 0;
   grid-template-areas: "svc-title"
@@ -310,14 +329,26 @@
                        "idiomas"
                        "otros"
                        "btn-svc";
-  }
+  .svc-title {
+    margin-top: size(3);                                                                
+    }
+  }  
 
   .card.card-svc {
     width: size(28);
-    height: size(50);
+    height: size(25);
     margin: 40px auto 40px auto;
-  }
-
+    &:hover {
+      height: 60%;
+    }
+    .card-desc {
+      @include fuente('norm', 'no', 'xxs');
+      opacity: 1;
+      height: auto;
+      top: 250px;
+      overflow-y: hidden; 
+    }
+ }
   .btn-quiero {
     margin: 40px auto 40px auto;
   }

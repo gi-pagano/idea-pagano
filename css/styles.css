@@ -949,7 +949,7 @@ figure.pic11 {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 50px;
-    grid-template-rows: 40px 500px 900px;
+    grid-template-rows: 40px 200px 900px;
     grid-template-areas: "contact-title" "contact-txt"  "formulario";
     row-gap: 0px; }
     .grid-contacto .h1-contacto {
@@ -959,8 +959,7 @@ figure.pic11 {
   .text-question {
     margin-top: 0; }
   .contacto-img {
-    width: 50%;
-    margin-top: 50px; }
+    display: none; }
   .grid-nosotros {
     display: grid;
     grid-template-columns: 1fr;
@@ -1067,23 +1066,22 @@ figure.pic11 {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 50px;
-    grid-template-rows: 100px 500px 900px;
+    grid-template-rows: 50px 200px 900px;
     grid-template-areas: "contact-title" "contact-txt"  "formulario";
     row-gap: 30px; }
     .grid-contacto .h1-contacto {
-      margin-top: 30px; }
+      margin-top: 20px; }
   .contact-txt {
     margin: 20px 30px auto 30px; }
   .contacto-img {
-    width: 40%;
-    margin-top: 50px; } }
+    display: none; } }
 
 @media only screen and (max-width: 433px) {
   .grid-contacto {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 50px;
-    grid-template-rows: 40px 450px 900px;
+    grid-template-rows: 40px 200px 900px;
     grid-template-areas: "contact-title" "contact-txt"  "formulario";
     row-gap: 10px; }
     .grid-contacto .h1-contacto {
@@ -1098,8 +1096,7 @@ figure.pic11 {
   .text-question {
     margin-top: 0; }
   .contacto-img {
-    width: 60%;
-    margin-top: 50px; }
+    display: none; }
   form label {
     padding-left: 50px; }
   .grid-nosotros {
@@ -1155,19 +1152,48 @@ figure.pic11 {
     margin: 10px 5px 0 5px;
     grid-template-areas: "svc-title" "itinerario"  "hotel" "idomas" "otros" "btn-svc"; } }
 
+.btn-quiero {
+  margin: 40px auto 40px auto; }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .card.card-svc {
+    width: 550px;
+    height: 350px;
+    margin: 40px auto 40px auto; }
+    .card.card-svc:hover {
+      height: 50%; }
+    .card.card-svc .card-desc {
+      opacity: 1;
+      height: auto;
+      top: 350px;
+      overflow-y: hidden; } }
+
 @media only screen and (max-width: 599px) {
   .grid-svc {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 50px;
-    grid-template-rows: 130px 650px 650px 650px 650px 200px;
+    grid-template-rows: 45px 670px 500px 570px 630px 200px;
     row-gap: 40px;
     margin: 10px 0 0 0;
     grid-template-areas: "svc-title" "itinerario"  "hotel" "idiomas" "otros" "btn-svc"; }
+    .grid-svc .svc-title {
+      margin-top: 30px; }
   .card.card-svc {
     width: 280px;
-    height: 500px;
+    height: 250px;
     margin: 40px auto 40px auto; }
+    .card.card-svc:hover {
+      height: 60%; }
+    .card.card-svc .card-desc {
+      font-family: "Trirong", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.6rem;
+      opacity: 1;
+      height: auto;
+      top: 250px;
+      overflow-y: hidden; }
   .btn-quiero {
     margin: 40px auto 40px auto; } }
 
