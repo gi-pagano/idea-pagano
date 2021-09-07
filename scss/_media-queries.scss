@@ -324,7 +324,7 @@
 @media only screen and (max-width: 599px) {
   .grid-svc {
   @include grid-row;
-  grid-template-rows: 45px 670px 500px 570px 630px 200px;
+  grid-template-rows: 45px 670px 670px 570px 630px 200px;
   row-gap: size(4);
   margin: 10px 0 0 0;
   grid-template-areas: "svc-title"
@@ -343,7 +343,6 @@
     height: size(25);
     margin: 40px auto 40px auto;
     &:hover {
-      pointer-events: none;
       height: 60%;
     }
     .card-desc {
@@ -352,9 +351,6 @@
       height: auto;
       top: 250px;
       overflow-y: hidden; 
-      &:hover {
-        pointer-events: none;
-      }
     }
  }
   .btn-quiero {
