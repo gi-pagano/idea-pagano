@@ -283,7 +283,7 @@
 @media only screen and (min-width: 600px)and (max-width: 1133px) {
   .grid-svc {
   @include grid-row;
-  grid-template-rows: 130px 650px 650px 650px 650px 200px;
+  grid-template-rows: 130px 670px 670px 670px 670px 200px;
   row-gap: size(4);
   margin: 10px 5px 0 5px;
   grid-template-areas: "svc-title"
@@ -306,13 +306,17 @@
     height: size(35);
     margin: 40px auto 40px auto;
     &:hover {
-      height: 50%;
+      pointer-events: none;
     }
+    
     .card-desc {
       opacity: 1;
       height: auto;
-      top: 350px;
-      overflow-y: hidden; 
+      top: 400px;
+      overflow-y: hidden;
+      &:hover {
+        height: 75%;
+      } 
     }
   }
 }
@@ -339,6 +343,7 @@
     height: size(25);
     margin: 40px auto 40px auto;
     &:hover {
+      pointer-events: none;
       height: 60%;
     }
     .card-desc {
@@ -347,6 +352,9 @@
       height: auto;
       top: 250px;
       overflow-y: hidden; 
+      &:hover {
+        pointer-events: none;
+      }
     }
  }
   .btn-quiero {

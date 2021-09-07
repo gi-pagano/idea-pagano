@@ -1147,7 +1147,7 @@ figure.pic11 {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 50px;
-    grid-template-rows: 130px 650px 650px 650px 650px 200px;
+    grid-template-rows: 130px 670px 670px 670px 670px 200px;
     row-gap: 40px;
     margin: 10px 5px 0 5px;
     grid-template-areas: "svc-title" "itinerario"  "hotel" "idomas" "otros" "btn-svc"; } }
@@ -1161,12 +1161,14 @@ figure.pic11 {
     height: 350px;
     margin: 40px auto 40px auto; }
     .card.card-svc:hover {
-      height: 50%; }
+      pointer-events: none; }
     .card.card-svc .card-desc {
       opacity: 1;
       height: auto;
-      top: 350px;
-      overflow-y: hidden; } }
+      top: 400px;
+      overflow-y: hidden; }
+      .card.card-svc .card-desc:hover {
+        height: 75%; } }
 
 @media only screen and (max-width: 599px) {
   .grid-svc {
@@ -1184,6 +1186,7 @@ figure.pic11 {
     height: 250px;
     margin: 40px auto 40px auto; }
     .card.card-svc:hover {
+      pointer-events: none;
       height: 60%; }
     .card.card-svc .card-desc {
       font-family: "Trirong", serif;
@@ -1194,6 +1197,8 @@ figure.pic11 {
       height: auto;
       top: 250px;
       overflow-y: hidden; }
+      .card.card-svc .card-desc:hover {
+        pointer-events: none; }
   .btn-quiero {
     margin: 40px auto 40px auto; } }
 
