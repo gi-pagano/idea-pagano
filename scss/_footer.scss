@@ -18,7 +18,7 @@
             width: percentage(3.3);
             .logo-footer{
                 width: percentage(3);
-                padding-left: size(1.5);
+                padding: 4%;
             }
 
             .copyright {
@@ -56,7 +56,7 @@
                 display: inline-block;
                 @include fuente('ita', '700', 'xxs');
 	            vertical-align: middle;
-                padding-left: size(1.5);
+                padding: 4%;
                 a {
                     color: $dark-ocean;
                     padding-left: size(0);

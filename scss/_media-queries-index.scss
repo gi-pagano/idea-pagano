@@ -21,10 +21,7 @@ nav li {
 
   .container-summary .container-summary-line {
     border-bottom: none;
-  }
-
-  .container-summary .container-summary-text {
-    padding: 70px 40px 0 40px;
+    padding: 0;
   }
 
   .container-summary .container-summary-img {
@@ -36,17 +33,22 @@ nav li {
   }
 
   .container-summary .container-summary-text {
-    padding: 50px 10px 0 10px;
+    padding: 20px 10px 0 10px;
     margin:0;
   }
 
   .aside-sty {
-    border-radius: 0;
+    width: 90%;
+    margin: 10% 5%;
   }
 
   div.card {
     flex-direction: column;
-  }  
+  } 
+  
+  .card-estirada {
+    margin: 10px 30px 10px 30px;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 990px) {
@@ -92,14 +94,14 @@ nav li {
 @media only screen and (max-width: 767px) { 
 
   .container-foot .container-foot_layout {
-    height: size(60);
+    height: size(65);
     @include flex-column;
     justify-content: center;
     .footer-items-layout  {
       width: percentage(9);
       .logo-footer {
         margin-left: 40%;
-        width: 20%;
+        width: 25%;
         padding-left: 0;
         margin-top: 10px;
       }
@@ -140,7 +142,7 @@ nav li {
 @media only screen and (max-width: 309px) {
     h4 {
       @include fuente('norm', '700', 'sm');
-      margin: 0 0 70px 70px;
+      margin: 0 0 10% 20%;
     }  
   
     div.cards {
@@ -164,7 +166,7 @@ nav li {
   @media only screen and (min-width: 310px) and (max-width: 403px) {
     h4 {
       @include fuente('norm', '700', 'sm');
-      margin: 0 0 90px 80px;
+      margin: 0 0 15% 23%;
     } 
   
     div.cards {
@@ -181,31 +183,17 @@ nav li {
     }  
   }
   
-  @media only screen and (min-width: 404px) and (max-width: 515px) {
+  @media only screen and (min-width: 404px) and (max-width: 653px) {
     h4 {
       @include fuente('norm', '700', 'md');
-      margin: 0 0 129px 90px;
-    }  
-  }
-  
-  @media only screen and (min-width: 516px) and (max-width: 653px) {
-    h4 {
-      @include fuente('norm', '700', 'md');
-      margin: 0 0 170px 90px;  
+      margin: 0 0 15% 23%;  
     } 
   }  
   
-  @media only screen and (min-width: 654px) and (max-width: 857px) {
+  @media only screen and (min-width: 654px) and (max-width: 995px) {
     h4 {
-      @include fuente('norm', '700', 'md');
-      margin: 0 0 245px 150px;  
-    }
-}   
-  
-  @media only screen and (min-width: 858px) and (max-width: 995px) {
-    h4 {
-      @include fuente('norm', '700', 'md');
-      margin: 0 0 320px 150px;  
+      @include fuente('norm', '700', 'lg');
+      margin: 0 0 32% 27%;  
     } 
   
     .carousel-item .carousel-item-texto {
@@ -220,7 +208,7 @@ nav li {
   
     h4 {
       @include fuente('norm', '700', 'lg');
-      margin: 0 0 380px 210px;  
+      margin: 0 0 35% 27%;  
     } 
   
     .carousel-item .carousel-item-texto {
@@ -228,40 +216,6 @@ nav li {
     }
   }
   
-  @media only screen and (min-width: 1403px) and (max-width: 1607px) {
-    h4 {
-      @include fuente('norm', '700', 'xl');
-      margin: 0 0 0 280px;  
-    } 
-  
-    .carousel-item-texto {
-          margin: 0 0 520px 0;
-      }
-  } 
-  
-  @media only screen and (min-width: 1608px) and (max-width: 1872px) {
-    h4 {
-      @include fuente('norm', '700', 'xl');
-      margin: 0 0 0 280px;  
-    } 
-  
-    .carousel-item-texto {
-          margin: 0 0 620px 0;
-      }
-  }  
-  
-  @media only screen and (min-width: 1873px) {
-    h4 {
-      @include fuente('norm', '700', 'xl');
-      margin: 0 0 0 400px;  
-    } 
-  
-    .carousel-item-texto {
-          margin: 0 -70px 700px 0;
-      }
-  }  
-
-
 //items dropdown//
 @media only screen and (min-width: 297px) and (max-width: 332px) {
     .navbar-nav .dropdown-menu {

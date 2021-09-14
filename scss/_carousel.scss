@@ -1,8 +1,8 @@
 .carousel-item-texto {
-		color: $light-ocean;
+		color: $dark-ocean;
 		@include fuente('norm', 'no', 'sm');
 		text-align: center;
-		margin: 0 100px 450px 100px;
+		margin: 0 5% 30% 5%;
 		padding-top: 0;
 		text-shadow: 0px 7px 10px rgba(black, 0.5);
 	}

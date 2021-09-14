@@ -16,7 +16,7 @@
 }
 
 .text-question {
-	border-radius: size(0.5);
+	border-radius: size(1);
 	text-align: center;
 	padding: size(1.5);
 	margin-top: size(5);
@@ -87,9 +87,9 @@ form {
 .staff {
 	@include flex-row;
 	background-color: $dark-ocean;
-	box-shadow: 0 40px 60px -6px black;
-	border-radius: size(3);
-	margin-bottom: size(4);
+	box-shadow: 0 3px 5px $light-ocean;
+	border-radius: size(1);
+	margin-bottom: size(20);
 	.staff-img { 
 		width: percentage(2.5);
 		border-radius: size(70);

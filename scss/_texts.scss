@@ -31,10 +31,9 @@ h3 {
 h4 {
     color: $light-ocean;
     @include fuente('norm', '700', 'xl');
-    padding: size(1) - 2;
     width: percentage(4.5);
-    margin-left: size(26);
-    text-shadow: 0px 7px 10px rgba(black, 0.5);
+    margin-left: percentage(2.7);
+    text-shadow: 0px 1px 10px rgba(black, 0.5);
 }  
 
 h5 {
@@ -92,8 +91,8 @@ p {
     grid-area: nosotros;
     @include flex-column;
     justify-content: center;
-    box-shadow: 0 40px 60px -6px black;
-    border-radius: size(9);
+    box-shadow: 0 2px 5px $light-ocean;;
+    border-radius: size(1);
     text-align: center;
     z-index: 2;
     width: 100%;

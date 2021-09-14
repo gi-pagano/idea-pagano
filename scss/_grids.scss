@@ -67,7 +67,7 @@
 //servicios//
 .grid-svc {
   @include grid-column;
-  grid-template-rows: 130px 650px 650px 200px;
+  grid-template-rows: 130px 650px 650px 250px;
   row-gap: size(7);
   margin: 10px 70px 0 70px;
   justify-items: center;

@@ -46,7 +46,7 @@
     .nosotros-div {
       margin: 10px 30px 0 30px;
       width: auto;
-      padding: size(2);
+      padding: size(3);
     }
 
     .nosotros-img {
@@ -120,7 +120,7 @@
 @media only screen and (max-width: 576px) {
 .grid-recommend {
   @include grid-row;
-  grid-template-rows: 80px 800px 800px;
+  grid-template-rows: 80px 650px 650px;
   margin: 0;
   grid-template-areas: "title"
                       "londres" 
@@ -204,6 +204,10 @@
     }                     
   } 
 
+  form {
+    margin: -20px;
+  }
+
   .h1-style {
     @include fuente('norm', '700', 'sm');
     } 
@@ -227,9 +231,8 @@
   //nosotros//
   .grid-nosotros {
     @include grid-row;
-    grid-template-rows: 70px 600px 500px;
+    grid-template-rows: 70px 650px;
     grid-template-areas:  "nosotros-title"
-                          "nosotros"
                           "img-nosotros";
     justify-content: center;                                                   
   }  
@@ -245,18 +248,18 @@
   .nosotros-div {
     margin: 10px 20px 0 20px;
     width: auto;
-    padding: size(2);
+    padding: size(3);
   }
 
   .nosotros-img {
-    justify-self: center;
-    padding:0; 
+    display: none;
   }
 
   .staff {
     @include flex-column;
     width: percentage(9);
     margin-left: percentage(0.5);
+    margin-bottom: 100px;
     .staff-img {
       align-self: center;
       width: percentage(4);
@@ -265,7 +268,14 @@
       padding: size(1);
     }  
   }  
-}               
+} 
+
+@media only screen and (max-width: 352px) {
+  .grid-nosotros {
+    @include grid-row;
+    grid-template-rows: 70px 750px;
+  }  
+}
 
 //servicios//
 @media only screen and (min-width: 1650px) {
@@ -355,6 +365,7 @@
  }
   .btn-quiero {
     margin: 40px auto 40px auto;
+    width: 280px;
   }
 }
 
